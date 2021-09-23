@@ -1,6 +1,5 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import {orderAZ} from './data.js'; //importar funciones de data.js//
+import data from './data/rickandmorty/rickandmorty.js';
+const rickandmorty = data.results;
 
-console.log(example, data);
+//console.log(orderAZ);//
