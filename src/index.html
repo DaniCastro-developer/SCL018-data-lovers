@@ -7,19 +7,23 @@
   </head>
   <body>
 <!-- PAGINA INICIO------------------------------------------------------------------->
-    <div class="welcome">
-      <h1>Bienvenido</h1>
-      <button class="button">Ingresar</button>
+    <div id="page1"> 
+      <div class="welcome">
+        <h1>Bienvenido</h1>
+        <button class="startButton" id="startButton">Ingresar</button>
+      </div>
     </div>
-
 <!-- SEGUNDA PAGINA---------------------------------------------------->
-    <header class="">
+    
+    <div class="page2">
+
       <div class="title">Rick and Morty</div>
       <div class="logo"></div>
 
+  
       <div class="filterA-Z">
-        <select name="filterOrderA-Z" id="filterA-Z">
-          <option value="alphabeticalOrder">Ordenar alfabéticamente</option>
+        <select name="filterOrderA-Z" id="filterA-Z" class="filterOrderA-Z">
+          <option value="alphabeticalOrder">Ordenar Alfabéticamente</option>
           <option value="orderAtoZ">A-Z</option>
           <option value="orderZtoA">Z-A</option>
         </select>
@@ -31,11 +35,15 @@
           <option value="male"> Masculino </option>
           <option value="female"> Femenino </option>
           <option value="unknown"> Desconocido </option>
-          <option value="unknown"> Sin Género </option>
-          
-          </select>
+          <option value="genderLess"> Sin Género </option>
+        </select>        
       </div>
-    </header>
+
+      <div id="cardContainer" class="cardContainer">
+        <!--div vacio para llenarlo con la data-->
+      </div>
+    
+    </div>
 
 
  
