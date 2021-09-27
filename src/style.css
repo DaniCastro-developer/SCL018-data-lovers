@@ -7,3 +7,14 @@ video {
     top: 0;
     left: 0;
 }
+
+.startButton {
+    opacity: 65%;
+    background-color: transparent;
+    border: none;
+}
+
+.startImage {
+    width: 50%;
+
+}
