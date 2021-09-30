@@ -6,21 +6,39 @@
     <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <video src="recursos/wallpaper_rickandmorty.mp4" autoplay muted loop></video>
+
+  
+   
 <!-- PAGINA INICIO------------------------------------------------------------------->
-    <div class="logo">
+<body>
+<div id="page1" class="page1">
+<section class="principal">
+  <div class="video">
+<video src="recursos/wallpaper_rickandmorty.mp4" autoplay muted loop></video>
+</div>    
+
+<div class="logo">
       <img src="recursos/logobienvenida.png">
     </div>
 
     <div class="buttonStart">
-      <button class="button-start"> ingresar </button>
+      <button id="button-start"> ingresar </button>
     </div>
+  </section>
+</div>
 
 <!-- SEGUNDA PAGINA---------------------------------------------------->
-    <div class="page2">
+<div class="page2" id="page2" hidden>
+<header>    
+  <img src="recursos/encabezado.png" class="encabezado"> 
+<button id="return-button"> volver </button>
+
       <div class="title">Rick and Morty</div>
       <div class="logo"></div>
+
+</header>
+
+<nav class="filtros">
 
       <div class="filterA-Z">
         <select name="filterOrderA-Z" id="filterA-Z">
@@ -42,10 +60,24 @@
       </div>
     </div>
 
+  </nav>
 
- 
+    <main class="content">
+      <div class="conteiner">
+          <div class="row">
+          <div class="image1">
+  
+              <img class="card1"> </img>
+  
+          </div>
+      </div>
+  </div>
+  
+  </main>
 
+</div>
 
     <script src="main.js" type="module"></script>
   </body>
+
 </html>

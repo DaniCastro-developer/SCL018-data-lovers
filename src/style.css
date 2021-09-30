@@ -2,7 +2,12 @@
 
 body {
     margin: 0;
+}
 
+.principal {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 video {
@@ -17,14 +22,15 @@ video {
 }
 
 .logo {
-    text-align: center;
+    grid-column: 2 / 5;
 }
 
-.page2 {
-    display: none;
+.buttonStart {
+    grid-column-start:5;
+    grid-row-start: 5;
 }
 
-.button-start {
+#button-start {
     border: none;
     font-family: 'Orbitron', sans-serif;
     font-size: 120%;
@@ -40,12 +46,16 @@ video {
     border-radius: 20px;
 }
 
-.button-start:hover{
+#button-start:hover{
     background-color: rgb(28, 168, 28);
 }
 
 
-.buttonStart {
-    text-align: right;
-
+/* segunda página */
+.encabezado {
+position: absolute;
+width: 100%;
+height: 20%;
+top: 0px;
+z-index: -1;
 }
