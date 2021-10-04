@@ -5,6 +5,7 @@
     <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     
 <!-- PAGINA INICIO------------------------------------------------------------------->
@@ -14,10 +15,53 @@
       <embed src= 'Recursos/intro.mp3' autostarty ='true' volume = "0.5" width="0" height="0">
       
         <h1>Bienvenido</h1>
-        <button onclick="location.href='page2.html'" class="startButton" id="startButton"> <img src="Recursos/boton-ingresar.png" class = "startImage"></button>
+        <button class="startButton" id="startButton"> <img src="Recursos/boton-ingresar.png" class = "startImage"></button>
       </div>
     </div>
 
+    <!-- SEGUNDA PAGINA---------------------------------------------------->
+    
+    <div id="page2" hidden>
+
+      <div class="title">Rick and Morty</div>
+      <div class="logo"></div>
+
+  
+      <div class="filterA-Z">
+        <select name="filterOrderA-Z" id="filterA-Z" class="filterOrderA-Z">
+          <option value="alphabeticalOrder">Ordenar Alfabéticamente</option>
+          <option value="orderAtoZ">A-Z</option>
+          <option value="orderZtoA">Z-A</option>
+        </select>
+      </div>
+
+      <div class="filterGender">
+        <select name="filterGender" id="filterGender">
+          <option value="filterGender"> Selecciona el género </option>
+          <option value="male"> Masculino </option>
+          <option value="female"> Femenino </option>
+          <option value="unknown"> Desconocido </option>
+          <option value="genderLess"> Sin Género </option>
+        </select>        
+      </div>
+
+      <div id="cardContainer" class="cardContainer">
+        <!--div vacio para llenarlo con la data-->
+      </div>
+    
+      <button class="returnButton" id="returnButton">Volver</button>
+      
+    
+
+
+    <main class = "container">
+
+      <div id="cards" class="cardContainer">
+    
+      </div>
+
+    </main> 
+  </div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
