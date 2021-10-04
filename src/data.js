@@ -1,13 +1,11 @@
 // estas funciones son de ejemplo
 
 
-export const orderAZ = (rickandmorty) 
-let orderName = rickandmorty.sort (function (a, b) {
-  if (a.name > b.name) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
-console.log (1,orderName);
+export const example = () => {
+  return 'example';
+};
+
+export const anotherExample = () => {
+  return 'OMG';
+};
 
