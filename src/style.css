@@ -19,23 +19,19 @@ video {
 }
 
 .cardContainer {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    display: flex;
+    display: inline;
+    display: block;
     
 }
 
 #frontCard { 
     padding: 10px;
-    grid-column: 1 /5;
-    grid-row: 1 /5;
     border: 2px solid #C8DD5D;
 }
 
 .nametag { 
     padding: 10px;
-    grid-column: 1 /5;
-    grid-row: 1 /5;
     border: 2px solid #C8DD5D;
 }
 
