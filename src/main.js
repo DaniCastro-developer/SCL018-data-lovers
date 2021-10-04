@@ -18,35 +18,19 @@ const rickandmorty = data.results;
 console.log("characheter",rickandmorty);
 
 
-const makeCard = (characters) => {
-    let list = '';
-    document.getElementById("cards").innerHTML = "";
-     `<div class="frontCard">
-      <img id="image" class="image" src="${characters.image}"/>
-      <div class="nametag">
-      <p id="nameChar" class="name-frontcard"> ${characters.name} </p>
-      </div>`;
- };
- 
- rickandmorty.forEach((value) => {
-    document.getElementById("cards").innerHTML += list;
-  });
-
-
-
-
-/*const makeCard = (characters) => {
+  const makeCard = (characters) => {
+    //Declaro una variable para imprimir la lista de personajes
     let list = "";
     document.getElementById("cards").innerHTML = "";
     //Incio el bucle
-    rickandmorty.forEach ((value) =>  {
-     return `<div class="frontCard">
-      <img id="image" class="image" src="${characters.image}"/>
+
+    for (let i=0; i<rickandmorty.length; i++ ){
+        list += `<div class="frontCard">
+      <img id="image" class="image" src="${characters[i].image}"/>
       <div class="nametag">
-      <p id="nameChar" class="name-frontcard"> ${characters.name} </p>
+      <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
       </div>`;
-      // console.log(characters[i]);
-    })
+    }
     document.getElementById("cards").innerHTML = list;
   }
-  makeCard(rickandmorty);*/
+  makeCard(rickandmorty);
