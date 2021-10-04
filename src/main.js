@@ -29,7 +29,14 @@ const makeCard = (characters) => {
       </div>`;
  };
 
- for (let i=0; i<10; i++) {
-     div.innerHTML += makeCard(rickandmorty[i]);
 
- }
+
+ for (let i=0; i<rickandmorty.length; i++) {
+    div.innerHTML += makeCard(rickandmorty[i]);
+
+}
+
+/*rickandmorty.forEach((value, i,rickandmorty) => {
+    div.innerHTML += makeCard(rickandmorty[i]);
+    console.log();
+  });*/
