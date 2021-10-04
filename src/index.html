@@ -11,11 +11,13 @@
 <!-- PAGINA INICIO------------------------------------------------------------------->
     <div id="page1"> 
       <div class="welcome">
+      <img src="Recursos/logobienvenida.png" class ="logo-welcome">
+      </div>
       <video src="Recursos/wallpaper_rickandmorty.mp4" autoplay muted loop></video>
       <embed src= 'Recursos/intro.mp3' autostarty ='true' volume = "0.5" width="0" height="0">
       
-        <h1>Bienvenido</h1>
-        <button class="startButton" id="startButton"> <img src="Recursos/boton-ingresar.png" class = "startImage"></button>
+       <div class ="button-start">
+        <button class="startButton" id="startButton"> ingresar </button>
       </div>
     </div>
 
@@ -23,6 +25,7 @@
     
     <div id="page2" hidden>
 
+      <header class="filtros">
       <div class="title">Rick and Morty</div>
       <div class="logo"></div>
 
@@ -45,22 +48,21 @@
         </select>        
       </div>
 
+      <div class="buttonReturn">
+        <button class="returnButton" id="returnButton">Volver</button>
+      </div>
+    </header>
+
+<main>
       <div id="cardContainer" class="cardContainer">
+
         <!--div vacio para llenarlo con la data-->
+
+           <div id="cards" class="cards">
+    
+          </div>
       </div>
-    
-      <button class="returnButton" id="returnButton">Volver</button>
-      
-    
-
-
-    <main class = "container">
-
-      <div id="cards" class="cardContainer">
-    
-      </div>
-
-    </main> 
+</main>
   </div>
     <script src="main.js" type="module"></script>
   </body>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 video {
     object-fit: cover;
     position: fixed;
@@ -8,34 +10,68 @@ video {
     left: 0;
 }
 
-.startButton {
-    opacity: 65%;
-    background-color: transparent;
-    border: none;
+.welcome {
+    text-align: center;
 }
+
+.button-start {
+    text-align: right;
+    padding-right: 10%;
+}
+
+#startButton {
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    color: #000000;
+    background-color: transparent;
+    opacity: 80%;
+    width: 150px;
+    height: 75px;
+    left: 1111px;
+    top: 512px;
+    background: rgba(4, 4, 42, 0.64);
+    border-radius: 20px;
+}
+
+#startButton:hover{
+    background-color: rgb(28, 168, 28);
+}
+
 
 .startImage {
     width: 50%;
 }
 
-.cardContainer {
-    display: flex;
-    display: inline;
-    display: block;
-    
-}
-
-#frontCard { 
-    padding: 10px;
-    border: 2px solid #C8DD5D;
-}
-
-.nametag { 
-    padding: 10px;
-    border: 2px solid #C8DD5D;
-}
 
 .image {
     width: 100px;
     height: 80px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frontCard {
+    display: flex;
+}
+
+.nameTag {
+    display: flex;
+    
 }

@@ -15,7 +15,7 @@ document.getElementById("returnButton").addEventListener("click",()=>{
 
 const rickandmorty = data.results;
 
-console.log("characheter",rickandmorty);
+//console.log("characheter",rickandmorty);
 
 
   const makeCard = (characters) => {
