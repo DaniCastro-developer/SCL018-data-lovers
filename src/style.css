@@ -50,19 +50,19 @@ video {
 }
 .header{
     width: 100%;
-    height: 20%;
+    height: 20px;
     background: rgba(31, 16, 73, 0.83);
+    
 }
 
 body{
     background-image: url('Recursos/fondo2.png');
     width: 100%;  
-    background-repeat: no-repeat;
-  
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
 }
     
-
-}
 
 main {
     padding-top: 10%;
@@ -91,6 +91,7 @@ main {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    
 }
 
 .card {
@@ -102,6 +103,7 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 20%;
+    margin-top: 0px;
 }
 
 .frontCard .image {
@@ -129,3 +131,4 @@ main {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
 }
+
