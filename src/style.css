@@ -44,29 +44,18 @@ video {
     background-color: rgb(28, 168, 28);
 }
 
+/* page 2 */
 
-.startImage {
-    width: 50%;
-}
 .header{
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: rgba(31, 16, 73, 0.83);
 }
 
-body{
+#page2 {
     background-image: url('Recursos/fondo2.png');
     width: 100%;  
     background-repeat: no-repeat;
-  
-}
-    
-
-}
-
-main {
-    padding-top: 10%;
-   
 }
 
 
@@ -83,25 +72,30 @@ main {
     font-family: 'Orbitron', sans-serif;
 }
 
+main {
+    margin-top: -20%;
+    width: 100%;
+}
 
 .frontCard {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    margin: 10px;
 }
 
 .card {
-    margin-top: 60px;
+    margin: 0.185%
 }
 
 .showCards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 22%;
 }
 
 .frontCard .image {
