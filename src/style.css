@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+body {
+    margin: 0%;
+}
+
 video {
     object-fit: cover;
     position: fixed;
@@ -45,33 +49,71 @@ video {
 }
 
 
-.image {
-    width: 100px;
-    height: 80px;
+main {
+    padding-top: 10%;
+    background-image: url('Recursos/fondo2.png');
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    background-image: url('Recursos/encabezado2.png');
+    height: 15vh;
+}
+
+.imageReturn {
+    width: 100%;
+    margin: -20%;
+
 }
 
 .filtros {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5%;
+    padding: 3%;
+    font-family: 'Orbitron', sans-serif;
 }
+
 
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
 }
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
 }
 
-.frontCard {
-    display: flex;
+.frontCard .image {
+    width: 184px;
+    height: 221px;
+    left: 240px;
+    top: 340px;
+    background: rgba(31, 16, 73, 0.88);
+    border: 3px solid #6BE458;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.nameTag {
-    display: flex;
-    
+.frontCard .name-frontcard{
+    width: 184px;
+    height: 58px;
+    left: 240px;
+    top: 547px;
+    margin-top: -1%;
+    background: #1F1049;
+    border: 4px solid #6BE458;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }

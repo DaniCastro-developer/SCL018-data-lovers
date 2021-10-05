@@ -7,7 +7,7 @@ document.getElementById("startButton").addEventListener("click",()=>{
     document.getElementById("page2").hidden=false; 
 },false);
 
-document.getElementById("returnButton").addEventListener("click",()=>{
+document.getElementById("imageReturn").addEventListener("click",()=>{
     document.getElementById("page2").hidden=true;
     document.getElementById("page1").hidden=false;
 },false);

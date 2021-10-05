@@ -23,13 +23,13 @@
 
     <!-- SEGUNDA PAGINA---------------------------------------------------->
     
-    <div id="page2" hidden>
+  <div id="page2" hidden>
 
-      <header class="filtros">
-      <div class="title">Rick and Morty</div>
-      <div class="logo"></div>
+    <header class="filtros">
+      
+      <div> <img src="Recursos/letrasRickandMorty.png" class="imageReturn" id="imageReturn">
+      </div>
 
-  
       <div class="filterA-Z">
         <select name="filterOrderA-Z" id="filterA-Z" class="filterOrderA-Z">
           <option value="alphabeticalOrder">Ordenar Alfabéticamente</option>
@@ -48,21 +48,17 @@
         </select>        
       </div>
 
-      <div class="buttonReturn">
-        <button class="returnButton" id="returnButton">Volver</button>
-      </div>
     </header>
 
-<main>
+   <main>
       <div id="cardContainer" class="cardContainer">
 
         <!--div vacio para llenarlo con la data-->
 
-           <div id="cards" class="cards">
-    
-          </div>
+           <div id="cards" class="cards"></div>
+
       </div>
-</main>
+   </main>
   </div>
     <script src="main.js" type="module"></script>
   </body>
