@@ -20,17 +20,23 @@ const rickandmorty = data.results;
 
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
-    let list = "";
-    document.getElementById("cards").innerHTML = "";
+    let list = ``;
+    const div = document.getElementById('showCards');
     //Incio el bucle
 
-    for (let i=0; i<rickandmorty.length; i++ ){
-        list += `<div class="frontCard">
-      <img id="image" class="image" src="${characters[i].image}"/>
-      <div class="nametag">
-      <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
-      </div>`;
+    for (let i=0; i<characters.length; i++ ){
+        list += `
+        <div class= "card">
+          <div id="printCharacters" class="cardContainer-inner">
+              <div class="frontCard">
+                <img id="image" class="image" src="${characters[i].image}"/>
+                <div class="nametag">
+                <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
+                </div>
+              </div>
+          </div>
+        </div>`;
     }
-    document.getElementById("cards").innerHTML = list;
+    div.innerHTML = list;
   }
   makeCard(rickandmorty);
