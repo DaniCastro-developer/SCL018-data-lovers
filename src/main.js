@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import {orderAZ} from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -40,3 +40,5 @@ const rickandmorty = data.results;
     div.innerHTML = list;
   }
   makeCard(rickandmorty);
+
+

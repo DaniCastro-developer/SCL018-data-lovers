@@ -25,7 +25,8 @@
     
   <div id="page2" hidden>
 
-    <header class="filtros">
+    <header>
+      <nav class="filtros">
       
       <div> <img src="Recursos/letrasRickandMorty.png" class="imageReturn" id="imageReturn">
       </div>
@@ -39,7 +40,7 @@
       </div>
 
       <div class="filterGender">
-        <select name="filterGender" id="filterGender">
+        <select name="filterGender" id="filterGender" class="filterOrderGender">
           <option value="filterGender"> Selecciona el género </option>
           <option value="male"> Masculino </option>
           <option value="female"> Femenino </option>
@@ -48,6 +49,10 @@
         </select>        
       </div>
 
+      <div class="searchBar-style">
+        <input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="Encuentra tu personaje"/>
+      </div>
+    </nav>
     </header>
 
    <main>
