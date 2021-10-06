@@ -136,6 +136,15 @@ main {
 
 .card {
     margin: 12px;
+    position: relative;
+    transition: 0.3s ease all;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card.active{
+    transform: rotateY(180deg);
 }
 
 .showCards {
@@ -172,4 +181,13 @@ main {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     font-size: 15px;
+}
+
+.backCard{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:teal;
+    position: absolute;
+    margin-top: 5%;
 }
