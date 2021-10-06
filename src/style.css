@@ -137,9 +137,10 @@ main {
 .card {
     margin: 12px;
     position: relative;
-    transition: 0.3s ease all;
+    transition: 0.3s ease-in-out;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
+    -wekit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -190,4 +191,13 @@ main {
     background-color:teal;
     position: absolute;
     margin-top: 5%;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    -wekit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card:hover.card{
+    transform: rotateY(180deg);
 }
