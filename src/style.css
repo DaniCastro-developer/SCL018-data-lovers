@@ -79,16 +79,14 @@ main {
     background: #120B26;
     width: 250px;
     height: 42px;
-    border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
-    margin-bottom:20px;
 }
 
 .filterOrderA-Z {
     background: transparent;
-    padding: 0 10px;
+    padding: 0px 10px;
     border: none;
     color: white;
     font-family: 'Orbitron', sans-serif;
@@ -100,16 +98,14 @@ main {
     background: #120B26;
     width: 250px;
     height: 42px;
-    border: 3px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
-    margin-bottom:20px;
 }
 
 .filterOrderGender {
     background: transparent;
-    padding: 0 10px;
+    padding: 0px 10px;
     border: none;
     color: white;
     font-family: 'Orbitron', sans-serif;
@@ -121,11 +117,10 @@ main {
     font-size: 12px;
     padding: 0 10px;
     color: white;
+    border-color: transparent;
     background: #120B26;
     width: 250px;
     height: 42px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
     border-radius: 10px;
 }
 
