@@ -137,13 +137,14 @@ main {
 .card {
     margin: 12px;
     position: relative;
-    transition: 0.3s ease all;
+    transition: 0.3s ease-in-out;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
+    -wekit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.card.active{
+.card.active {
     transform: rotateY(180deg);
 }
 
@@ -190,6 +191,12 @@ main {
     background-color:#26174e;
     border-radius: 10px;
     margin-top: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    -wekit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .backCard .imageBack {
@@ -230,4 +237,7 @@ main {
     text-align: center;
     font-size: 10px;
 }
+
+
+
 
