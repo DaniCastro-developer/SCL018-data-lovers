@@ -34,17 +34,18 @@ const rickandmorty = data.results;
             <div class="frontCard">
                 <img id="image" class="image" src="${characters[i].image}"/>
                 <div class="nametag">
-                <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
+                <p id="nameFront" class="name-frontcard"> ${characters[i].name} </p>
                 </div>
             </div>
             <div class="backCard">
+              <img id="imageBack" class="imageBack" src="${characters[i].image}"/>
               <div class="nameCardBack">
                 <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
               </div>
               <div class="description">
-                <p id="statusBack" class="statusBack"> ${characters[i].status} </p>
-                <p id="genderBack" class="genderBack"> ${characters[i].gender} </p>
-                <p id="speciesBack" class="speciesBack"> ${characters[i].species} </p>
+                <p id="statusBack" class="statusBack"> Estado: ${characters[i].status} </p>
+                <p id="genderBack" class="genderBack"> Género: ${characters[i].gender} </p>
+                <p id="speciesBack" class="speciesBack"> Especie: ${characters[i].species} </p>
               </div>
             </div>
               
