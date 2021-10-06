@@ -2,7 +2,6 @@
 body {
     margin: 0%;
 }
-
 video {
     object-fit: cover;
     position: fixed;
@@ -12,16 +11,13 @@ video {
     top: 0;
     left: 0;
 }
-
 .welcome {
     text-align: center;
 }
-
 .button-start {
     text-align: right;
     padding-right: 10%;
 }
-
 #startButton {
     border: none;
     font-family: 'Orbitron', sans-serif;
@@ -37,16 +33,16 @@ video {
     background: rgba(4, 4, 42, 0.64);
     border-radius: 20px;
 }
-
 #startButton:hover{
     background-color: rgb(28, 168, 28);
 }
-
 .startImage {
     width: 50%;
 }
 
+
 /* page 2 */
+
 
 body{
     background-image: url('Recursos/fondo2.png');
@@ -55,17 +51,14 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-
 main {
     padding-top: 0%;
-
 }
 
 .imageReturn {
     width: 120%;
     margin: -15%;
 }
-
 .filtros {
     display: flex;
     justify-content: space-between;
@@ -73,7 +66,6 @@ main {
     font-family: 'Orbitron', sans-serif;
     background: rgba(31, 16, 73, 0.84);
 }
-
 .filterA-Z {
     color: white;
     background: #120B26;
@@ -92,7 +84,6 @@ main {
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
 }
-
 .filterGender {
     color: white;
     background: #120B26;
@@ -111,7 +102,6 @@ main {
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
 }
-
 .searchBar {
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
@@ -147,7 +137,6 @@ main {
 .card.active {
     transform: rotateY(180deg);
 }
-
 .showCards {
     display: flex;
     flex-flow: row wrap;
@@ -156,7 +145,6 @@ main {
     margin-left: 12%;
     margin-top: 5%;
 }
-
 .frontCard .image {
     width: 184px;
     height: 207px;
@@ -167,7 +155,6 @@ main {
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
 }
-
 .frontCard .name-frontcard{
     width: 184px;
     height: 44px;

@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import orderAlphabetic from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -13,17 +13,14 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
 },false);
 
 
-const rickandmorty = data.results;
-
-//console.log("characheter",rickandmorty);
-
+let rickandmorty = data.results;
+const div = document.getElementById('showCards');
 
 // función para imprimir datos en consola
 
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
     let list = ``;
-    const div = document.getElementById('showCards');
     //Incio el bucle
 
     for (let i=0; i<characters.length; i++ ){
@@ -56,9 +53,30 @@ const rickandmorty = data.results;
   }
   makeCard(rickandmorty);
 
-
+// función para dar vueltas las cartas//
   const descripctionCard = document.getElementById("card");
 
   descripctionCard.addEventListener ("click", ()=> { 
     descripctionCard.classList.toggle("card.active");
   })
+
+// ordernar alfabeticamente las tarjetas//
+  let select = document.getElementById("filterA-Z");
+  select.addEventListener("change", function () {
+  
+    if (select.value === "orderAtoZ") {
+      let characters = orderAlphabetic.orderAZ(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty); 
+    }
+    else if (select.value === "orderZtoA") {
+      let characters = orderAlphabetic.orderZA(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty);
+    }
+    else if (select.value === "alphabeticalOrder"){
+      let characters = orderAlphabetic.orderDefault(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty);
+    }
+  });
