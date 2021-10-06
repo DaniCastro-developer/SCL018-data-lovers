@@ -18,6 +18,8 @@ const rickandmorty = data.results;
 //console.log("characheter",rickandmorty);
 
 
+// función para imprimir datos en consola
+
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
     let list = ``;
