@@ -2,28 +2,48 @@
    
 // estas funciones son de ejemplo
 
-import rickandmorty from "./data/rickandmorty/rickandmorty";
+const orderAlphabetic = {
 
-
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
-
-export const orderAZ = rickandmorty.sort((a,b) => {
+orderAZ(rickandmorty) {
+let orderCharacters = rickandmorty.sort((a,b) => {
   if (a.name > b.name) {
     return 1;
   }
-  if (a.name < b.name) {
+  {
     return -1;
   }
-  return 0;
 });
+console.log ('ordenAZ', orderCharacters);
+return orderCharacters;
+},
 
-//custom console
-console.log(orderAZ);
+orderZA(rickandmorty) {
+let orderCharacters= rickandmorty.sort((a,b) => {
+  if (a.name < b.name) {
+    return 1;
+  }
+  {
+    return -1;
+  }
+});
+console.log ('orderZA', orderCharacters);
+return orderCharacters;
+},
 
+orderDefault(rickandmorty){
+ let orderCharacters= rickandmorty.sort((a,b) => {
+  if (a.id > b.id) {
+    return 1;
+  }
+  {
+    return -1
+  }
+});
+console.log ('orderDefault', orderCharacters);
+return orderCharacters;
+}
+
+}
+
+export default orderAlphabetic
 
