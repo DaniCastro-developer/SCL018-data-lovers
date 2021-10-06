@@ -30,8 +30,8 @@ const rickandmorty = data.results;
         list += `
         
         <div id="printCharacters" class="cardContainer-inner">
-          <div class= "card">
-            <div class="frontCard">
+          <div class= "card" id= "card">
+            <div class="frontCard" id="frontCard">
                 <img id="image" class="image" src="${characters[i].image}"/>
                 <div class="nametag">
                 <p id="nameFront" class="name-frontcard"> ${characters[i].name} </p>
@@ -57,8 +57,8 @@ const rickandmorty = data.results;
   makeCard(rickandmorty);
 
 
-  const descripctionCard = document.querySelector("showCard");
+  const descripctionCard = document.getElementById("card");
 
-  descripctionCard.addEventListener("click",()=>{
-    descripctionCard.classList.toggle("active");
+  descripctionCard.addEventListener ("click", ()=> { 
+    descripctionCard.classList.toggle("card.active");
   })
