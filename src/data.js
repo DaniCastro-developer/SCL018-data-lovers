@@ -36,6 +36,8 @@ orderDefault(rickandmorty){
 return orderCharacters;
 },
 
+// filtro por género//
+
 genderFunction(rickandmorty, gender){
   let onlyGender = rickandmorty.filter((character) => {
   return character.gender === gender;
