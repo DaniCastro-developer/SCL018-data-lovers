@@ -81,3 +81,29 @@ const div = document.getElementById('showCards');
       makeCard(rickandmorty);
     }
   });
+
+
+  let gender = document.getElementById("filterGender");
+  select.addEventListener("change", function () {
+  
+    if (gender.value === "male") {
+      let characters = filters.orderMale(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty); 
+    }
+    else if (gender.value === "female") {
+      let characters = filters.orderZA(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty);
+    }
+    else if (gender.value === "unknown"){
+      let characters = filters.orderDefault(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty);
+    }
+    else if (gender.value === "genderLess") {
+      let characters = filters.orderZA(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty);
+    }
+  });
