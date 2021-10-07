@@ -2,7 +2,7 @@
    
 // estas funciones son de ejemplo
 
-const orderAlphabetic = {
+const filters = {
 
 orderAZ(rickandmorty) {
 let orderCharacters = rickandmorty.sort((a,b) => {

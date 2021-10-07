@@ -1,4 +1,4 @@
-import orderAlphabetic from './data.js';
+import filters from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -54,28 +54,29 @@ const div = document.getElementById('showCards');
   makeCard(rickandmorty);
 
 // función para dar vueltas las cartas//
-  const descripctionCard = document.getElementById("card");
+  /*const descripctionCard = e.currentTarget;
 
   descripctionCard.addEventListener ("click", ()=> { 
     descripctionCard.classList.toggle("card.active");
-  })
+  })*/
 
+  
 // ordernar alfabeticamente las tarjetas//
   let select = document.getElementById("filterA-Z");
   select.addEventListener("change", function () {
   
     if (select.value === "orderAtoZ") {
-      let characters = orderAlphabetic.orderAZ(rickandmorty);
+      let characters = filters.orderAZ(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty); 
     }
     else if (select.value === "orderZtoA") {
-      let characters = orderAlphabetic.orderZA(rickandmorty);
+      let characters = filters.orderZA(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty);
     }
     else if (select.value === "alphabeticalOrder"){
-      let characters = orderAlphabetic.orderDefault(rickandmorty);
+      let characters = filters.orderDefault(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty);
     }

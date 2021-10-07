@@ -66,6 +66,7 @@ main {
     font-family: 'Orbitron', sans-serif;
     background: rgba(31, 16, 73, 0.84);
 }
+
 .filterA-Z {
     color: white;
     background: #120B26;
@@ -74,6 +75,10 @@ main {
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
+}
+
+.filterA-Z:hover, .filterGender:hover, .searchBar:hover  {
+    background-color: rgb(28, 168, 28);
 }
 
 .filterOrderA-Z {
@@ -137,6 +142,7 @@ main {
 .card.active {
     transform: rotateY(180deg);
 }
+
 .showCards {
     display: flex;
     flex-flow: row wrap;
@@ -145,6 +151,7 @@ main {
     margin-left: 12%;
     margin-top: 5%;
 }
+
 .frontCard .image {
     width: 184px;
     height: 207px;
@@ -155,6 +162,7 @@ main {
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
 }
+
 .frontCard .name-frontcard{
     width: 184px;
     height: 44px;
@@ -193,7 +201,7 @@ main {
     margin: auto;
     padding-top: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .nameBack {
@@ -225,6 +233,8 @@ main {
     font-size: 10px;
 }
 
-
+.card:hover.card{
+    transform: rotateY(180deg);
+}
 
 
