@@ -1,9 +1,3 @@
-
-   
-// estas funciones son de ejemplo
-
-
-
 const filters = {
 
 orderAZ(rickandmorty) {
@@ -15,7 +9,6 @@ let orderCharacters = rickandmorty.sort((a,b) => {
     return -1;
   }
 });
-console.log ('ordenAZ', orderCharacters);
 return orderCharacters;
 },
 
@@ -28,7 +21,6 @@ let orderCharacters= rickandmorty.sort((a,b) => {
     return -1;
   }
 });
-console.log ('orderZA', orderCharacters);
 return orderCharacters;
 },
 
@@ -41,16 +33,18 @@ orderDefault(rickandmorty){
     return -1
   }
 });
-console.log ('orderDefault', orderCharacters);
 return orderCharacters;
 },
 
-orderMale(rickandmorty){
-  let orderGender= rickandmorty.filter((characters)=>
-    characters.gender===Male);
-  console.log('filtroGenero',orderMale);
-  return orderGender;
-}
+genderFunction(rickandmorty, gender){
+  let onlyGender = rickandmorty.filter((character) => {
+  return character.gender === gender;
+  });
+  console.log(onlyGender);
+  return onlyGender;
+},
+
+
 
 }
 

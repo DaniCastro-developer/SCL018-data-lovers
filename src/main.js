@@ -21,6 +21,7 @@ const div = document.getElementById('showCards');
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
     let list = ``;
+    div.innerHTML = '';
     //Incio el bucle
 
     for (let i=0; i<characters.length; i++ ){
@@ -82,28 +83,18 @@ const div = document.getElementById('showCards');
     }
   });
 
+// filtrar por género //
 
-  let gender = document.getElementById("filterGender");
-  select.addEventListener("change", function () {
+const selectMale= document.querySelector('#filterGender');
+selectMale.addEventListener('change', () => {
+  if (selectMale.value === 'male') {
+    div.innerHTML = "";
+    let gender = "Male";
+    let onlyGender = filters.genderFunction(rickandmorty, gender);
+    makeCard(onlyGender);
+  } else {
+    makeCard(rickandmorty);
+  }
+});
+
   
-    if (gender.value === "male") {
-      let characters = filters.orderMale(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty); 
-    }
-    else if (gender.value === "female") {
-      let characters = filters.orderZA(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-    else if (gender.value === "unknown"){
-      let characters = filters.orderDefault(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-    else if (gender.value === "genderLess") {
-      let characters = filters.orderZA(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-  });
