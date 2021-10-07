@@ -85,16 +85,31 @@ const div = document.getElementById('showCards');
 
 // filtrar por género //
 
-const selectMale= document.querySelector('#filterGender');
-selectMale.addEventListener('change', () => {
-  if (selectMale.value === 'male') {
+const selectGender= document.querySelector('#filterGender');
+selectGender.addEventListener('change', () => {
+  if (selectGender.value === 'male') {
     div.innerHTML = "";
     let gender = "Male";
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
-  } else {
-    makeCard(rickandmorty);
+  } else if(selectGender.value === 'female'){div.innerHTML = "";
+  let gender = "Female";
+  let onlyGender = filters.genderFunction(rickandmorty, gender);
+  makeCard(onlyGender); 
+  } else if(selectGender.value === 'unknown'){div.innerHTML = "";
+  let gender = "unknown";
+  let onlyGender = filters.genderFunction(rickandmorty, gender);
+  makeCard(onlyGender); 
+  } else if(selectGender.value === 'genderLess'){div.innerHTML = "";
+  let gender = "Genderless";
+  let onlyGender = filters.genderFunction(rickandmorty, gender);
+  makeCard(onlyGender); 
   }
+
+
 });
+
+
+
 
   

@@ -42,7 +42,7 @@ genderFunction(rickandmorty, gender){
   let onlyGender = rickandmorty.filter((character) => {
   return character.gender === gender;
   });
-  console.log(onlyGender);
+  //console.log(onlyGender);
   return onlyGender;
 },
 
