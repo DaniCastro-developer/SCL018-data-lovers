@@ -2,6 +2,8 @@
    
 // estas funciones son de ejemplo
 
+
+
 const filters = {
 
 orderAZ(rickandmorty) {
@@ -41,9 +43,15 @@ orderDefault(rickandmorty){
 });
 console.log ('orderDefault', orderCharacters);
 return orderCharacters;
+},
+
+orderMale(rickandmorty){
+  let orderGender= rickandmorty.filter((characters)=>
+    characters.gender===Male);
+  console.log('filtroGenero',orderMale);
+  return orderGender;
 }
 
 }
 
-export default orderAlphabetic
-
+export default filters
