@@ -51,3 +51,40 @@ selectGender.addEventListener('change', (e) => {
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
 });
+
+const selectSpecies= document.querySelector('#filterSpecies');
+
+selectSpecies.addEventListener('change', (e) => {
+
+  const genderSelect = e.target.options;
+  const valueSpecie = genderSelect[genderSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let species = valueSpecie;
+    let onlySpecies = filters.speciesFunction(rickandmorty, species);
+    makeCard(onlySpecies);
+});
+
+const selectStatus= document.querySelector('#filterStatus');
+
+selectStatus.addEventListener('change', (e) => {
+
+  const statusSelect = e.target.options;
+  const valueStatus = statusSelect[statusSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let status = valueStatus;
+    let onlyStatus = filters.statusFunction(rickandmorty, status);
+    makeCard(onlyStatus);
+});
+
+const selectLocation= document.querySelector('#filterLocation');
+
+selectLocation.addEventListener('change', (e) => {
+
+  const locationSelect = e.target.options;
+  const valueLocation = locationSelect[locationSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let location = valueLocation;
+    let onlyLocation = filters.locationFunction(rickandmorty, location.name);
+    makeCard(onlyLocation);
+    console.log(onlyLocation)
+});
