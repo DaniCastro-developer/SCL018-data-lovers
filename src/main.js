@@ -1,4 +1,5 @@
 import filters from './data.js';
+import showNav from './navdin.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -37,9 +38,11 @@ const div = document.getElementById('showCards');
   }
   makeCard(rickandmorty);
 
+
 const selectGender= document.querySelector('#filterGender');
 
 selectGender.addEventListener('change', (e) => {
+
   const genderSelect = e.target.options;
   const valueGender = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
@@ -47,9 +50,3 @@ selectGender.addEventListener('change', (e) => {
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
 });
-
-
-
-
-
-  
