@@ -45,8 +45,10 @@ const showNav = () => {
       let uniqueStatus = status.filter(onlyUnique);
     
       let uniqueGender = gender.filter(onlyUnique);
+      
     
       let uniqueLocation = location.filter(onlyUnique);
+      
       //creating navigation with unique values
     
       let nav = `<nav class="allFilters"> 
@@ -103,7 +105,7 @@ const showNav = () => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
-      nav += `</select>
+      /*nav += `</select>
       </div>
       <div>
               <input
@@ -113,7 +115,7 @@ const showNav = () => {
           
               />
             </div>
-      </nav>`;
+      </nav>`;*/
       return nav;
     };
     

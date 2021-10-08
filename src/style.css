@@ -59,54 +59,22 @@ main {
     width: 120%;
     margin: -15%;
 }
-.filtros {
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
-    font-family: 'Orbitron', sans-serif;
-    background: rgba(31, 16, 73, 0.84);
-}
 
-.filterA-Z {
+.selectFilter {
     color: white;
     background: #120B26;
-    width: 250px;
+    width: 150px;
     height: 42px;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Orbitron', sans-serif;
 }
 
-.filterA-Z:hover, .filterGender:hover, .searchBar:hover  {
+.selectFilter:hover  {
     background-color: rgb(28, 168, 28);
 }
 
-.filterOrderA-Z {
-    background: transparent;
-    padding: 0px 10px;
-    border: none;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px;
-}
-.filterGender {
-    color: white;
-    background: #120B26;
-    width: 250px;
-    height: 42px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.filterOrderGender {
-    background: transparent;
-    padding: 0px 10px;
-    border: none;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px;
-}
 .searchBar {
     font-family: 'Orbitron', sans-serif;
     font-size: 12px;
@@ -239,8 +207,9 @@ main {
 
 .allFilters {
     display: flex;
-    justify-content: space-between;
-    padding: 3%;
+    justify-content: space-around;
+    padding: 2%;
+    padding-right: 10px;
     font-family: 'Orbitron', sans-serif;
     background: rgba(31, 16, 73, 0.84);
 }
@@ -250,4 +219,8 @@ main {
     justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
     padding: 3%;
+}
+
+.filters{
+    padding-right: 10px;
 }
