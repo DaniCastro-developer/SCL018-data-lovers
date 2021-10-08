@@ -1,4 +1,5 @@
-import orderAlphabetic from './data.js';
+import filters from './data.js';
+import showNav from './navdin.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -38,22 +39,15 @@ const div = document.getElementById('showCards');
   }
   makeCard(rickandmorty);
 
-  let select = document.getElementById("filterA-Z");
-  select.addEventListener("change", function () {
-  
-    if (select.value === "orderAtoZ") {
-      let characters = orderAlphabetic.orderAZ(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty); 
-    }
-    else if (select.value === "orderZtoA") {
-      let characters = orderAlphabetic.orderZA(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-    else if (select.value === "alphabeticalOrder"){
-      let characters = orderAlphabetic.orderDefault(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-  });
+
+const selectGender= document.querySelector('#filterGender');
+
+selectGender.addEventListener('change', (e) => {
+
+  const genderSelect = e.target.options;
+  const valueGender = genderSelect[genderSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let gender = valueGender;
+    let onlyGender = filters.genderFunction(rickandmorty, gender);
+    makeCard(onlyGender);
+});
