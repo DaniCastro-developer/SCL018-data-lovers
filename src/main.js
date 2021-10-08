@@ -13,6 +13,7 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
     document.getElementById("page1").hidden=false;
 },false);
 
+
 let rickandmorty = data.results;
 const div = document.getElementById('showCards');
 
