@@ -51,7 +51,7 @@ const showNav = () => {
     
       let nav = `<nav class="allFilters"> 
         <div class="filter-Species">
-          <select name="" id="" class="selectFilter">
+          <select name="" id="filterSpecies" class="selectFilter">
           <option value="species" selected>Species</option>
           `;
     
@@ -63,7 +63,7 @@ const showNav = () => {
       nav += `</select>
         </div>
       <div class="filter-Origin">
-        <select name="" id="" class="selectFilter">
+        <select name="" id="filterOrigin" class="selectFilter">
         <option value="Origin" selected>Origin</option>
         `;
     
@@ -74,7 +74,7 @@ const showNav = () => {
       nav += `</select>
       </div>
       <div class="filter-Status">
-        <select name="" id="" class="selectFilter">
+        <select name="" id="filterStatus" class="selectFilter">
         <option value="status" selected>Status</option>`;
     
       uniqueStatus.forEach((e) => {
@@ -95,7 +95,7 @@ const showNav = () => {
       nav += `</select>
       </div>
       <div class="filter-Location">
-        <select name="" id="" class="selectFilter">
+        <select name="" id="filterLocation" class="selectFilter">
         <option value="Locacion" selected>Location</option>
         `;
     
