@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    //falta agregar el meta para responsive
+    
     <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -26,34 +29,22 @@
   <div id="page2" hidden>
 
     <header>
-      <nav class="filtros">
+      <nav class="header">
       
       <div> <img src="Recursos/letrasRickandMorty.png" class="imageReturn" id="imageReturn">
       </div>
-
-      <div class="filterA-Z">
-        <select name="filterOrderA-Z" id="filterA-Z" class="filterOrderA-Z">
-          <option value="alphabeticalOrder">Ordenar Alfabéticamente</option>
-          <option value="orderAtoZ">A-Z</option>
-          <option value="orderZtoA">Z-A</option>
-        </select>
-      </div>
-
-      <div class="filterGender">
-        <select name="filterforGender" id="filterGender" class="filterOrderGender">
-          <option value="filterGender"> Selecciona el género </option>
-          <option value="male"> Masculino </option>
-          <option value="female"> Femenino </option>
-          <option value="unknown"> Desconocido </option>
-          <option value="genderLess"> Sin Género </option>
-        </select>        
-      </div>
-
       <div class="searchBar-style">
         <input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="Encuentra tu personaje"/>
       </div>
-    </nav>
     </header>
+
+    <nav class="allFilters" id="allFilters"> 
+
+    <div class="filters" id="filters">
+
+    </div>
+
+    </nav>
 
    <main>
       <div class="cardContainer">

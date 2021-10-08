@@ -12,41 +12,24 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
     document.getElementById("page1").hidden=false;
 },false);
 
-
 let rickandmorty = data.results;
 const div = document.getElementById('showCards');
-
-// función para imprimir datos en consola
 
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
     let list = ``;
-    div.innerHTML = '';
     //Incio el bucle
 
     for (let i=0; i<characters.length; i++ ){
         list += `
-        
-        <div id="printCharacters" class="cardContainer-inner">
-          <div class= "card" id= "card">
-            <div class="frontCard" id="frontCard">
+        <div class= "card">
+          <div id="printCharacters" class="cardContainer-inner">
+              <div class="frontCard">
                 <img id="image" class="image" src="${characters[i].image}"/>
                 <div class="nametag">
-                <p id="nameFront" class="name-frontcard"> ${characters[i].name} </p>
+                <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
                 </div>
-            </div>
-            <div class="backCard">
-              <img id="imageBack" class="imageBack" src="${characters[i].image}"/>
-              <div class="nameCardBack">
-                <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
               </div>
-              <div class="description">
-                <p id="statusBack" class="statusBack"> Estado: ${characters[i].status} </p>
-                <p id="genderBack" class="genderBack"> Género: ${characters[i].gender} </p>
-                <p id="speciesBack" class="speciesBack"> Especie: ${characters[i].species} </p>
-              </div>
-            </div>
-              
           </div>
         </div>`;
     }
@@ -54,60 +37,17 @@ const div = document.getElementById('showCards');
   }
   makeCard(rickandmorty);
 
-// función para dar vueltas las cartas//
-  /*const descripctionCard = e.currentTarget;
-
-  descripctionCard.addEventListener ("click", ()=> { 
-    descripctionCard.classList.toggle("card.active");
-  })*/
-
-  
-// ordernar alfabeticamente las tarjetas//
-  let select = document.getElementById("filterA-Z");
-  select.addEventListener("change", function () {
-  
-    if (select.value === "orderAtoZ") {
-      let characters = filters.orderAZ(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty); 
-    }
-    else if (select.value === "orderZtoA") {
-      let characters = filters.orderZA(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-    else if (select.value === "alphabeticalOrder"){
-      let characters = filters.orderDefault(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty);
-    }
-  });
-
-// filtrar por género //
-
 const selectGender= document.querySelector('#filterGender');
-selectGender.addEventListener('change', () => {
-  if (selectGender.value === 'male') {
+
+selectGender.addEventListener('change', (e) => {
+  const genderSelect = e.target.options;
+  const valueGender = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
-    let gender = "Male";
+    let gender = valueGender;
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
-  } else if(selectGender.value === 'female'){div.innerHTML = "";
-  let gender = "Female";
-  let onlyGender = filters.genderFunction(rickandmorty, gender);
-  makeCard(onlyGender); 
-  } else if(selectGender.value === 'unknown'){div.innerHTML = "";
-  let gender = "unknown";
-  let onlyGender = filters.genderFunction(rickandmorty, gender);
-  makeCard(onlyGender); 
-  } else if(selectGender.value === 'genderLess'){div.innerHTML = "";
-  let gender = "Genderless";
-  let onlyGender = filters.genderFunction(rickandmorty, gender);
-  makeCard(onlyGender); 
-  }
-
-
 });
+
 
 
 
