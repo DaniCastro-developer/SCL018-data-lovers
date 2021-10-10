@@ -20,24 +20,40 @@ const div = document.getElementById('showCards');
   const makeCard = (characters) => {
     //Declaro una variable para imprimir la lista de personajes
     let list = ``;
+    div.innerHTML ='';
     //Incio el bucle
 
     for (let i=0; i<characters.length; i++ ){
         list += `
-        <div class= "card">
-          <div id="printCharacters" class="cardContainer-inner">
-              <div class="frontCard">
-                <img id="image" class="image" src="${characters[i].image}"/>
-                <div class="nametag">
-                <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
-                </div>
+
+        <div id="printCharacters" class="cardContainer-inner">
+        <div class= "card" id= "card">
+          <div class="frontCard" id="frontCard">
+              <img id="image" class="image" src="${characters[i].image}"/>
+              <div class="nametag">
+              <p id="nameFront" class="name-frontcard"> ${characters[i].name} </p>
               </div>
           </div>
-        </div>`;
-    }
-    div.innerHTML = list;
+          <div class="backCard">
+            <img id="imageBack" class="imageBack" src="${characters[i].image}"/>
+            <div class="nameCardBack">
+              <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
+            </div>
+            <div class="description">
+              <p id="statusBack" class="infoBack"> Estado: ${characters[i].status} </p>
+              <p id="genderBack" class="infoBack"> Género: ${characters[i].gender} </p>
+              <p id="speciesBack" class="infoBack"> Especie: ${characters[i].species} </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>`;
   }
-  makeCard(rickandmorty);
+  div.innerHTML = list;
+}
+makeCard(rickandmorty);
+
+// search bar
 
   const selectSearch= document.querySelector('#searchBar');
 
@@ -50,6 +66,8 @@ const div = document.getElementById('showCards');
   });
 
 const selectGender= document.querySelector('#filterGender');
+
+//filters 
 
 selectGender.addEventListener('change', (e) => {
 

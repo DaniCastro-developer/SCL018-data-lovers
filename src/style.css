@@ -55,25 +55,64 @@ main {
     padding-top: 0%;
 }
 
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    padding: 2%;
+}
 .imageReturn {
     width: 120%;
     margin: -15%;
 }
 
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+
+
+.allFilters {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    padding-right: 10px;
+    font-family: 'Orbitron', sans-serif;
+    background: rgba(31, 16, 73, 0.84)
+}
+
+.filter-Species{
+    display: flex;
+    justify-content: space-between;
+    background:rgba(31, 16, 73, 0.84);
+}
+
+
 .selectFilter {
+    display: flex;
+    justify-content: space-between;
     color: white;
-    background: #120B26;
-    width: 150px;
+    background:  #120B26;
+    margin: 15px;
+    width: 170px;
     height: 42px;
     box-sizing: border-box;
     border-radius: 10px;
-    text-align: center;
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 12px;
 }
 
-.selectFilter:hover  {
+.selectFilter:hover {
     background-color: rgb(28, 168, 28);
 }
+
 
 .searchBar {
     font-family: 'Orbitron', sans-serif;
@@ -85,6 +124,10 @@ main {
     width: 250px;
     height: 42px;
     border-radius: 10px;
+}
+
+.searchBar:hover {
+    background-color: rgb(28, 168, 28);
 }
 
 .frontCard {
@@ -114,7 +157,7 @@ main {
 .showCards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 12%;
     margin-left: 12%;
     margin-top: 5%;
@@ -169,7 +212,7 @@ main {
     margin: auto;
     padding-top: 10px;
     text-align: center;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .nameBack {
@@ -180,21 +223,8 @@ main {
     font-size: 14px;
 }
 
-.statusBack {
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    font-size: 10px;
-}
 
-.genderBack {
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    font-size: 10px;
-}
-
-.speciesBack {
+.infoBack {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
@@ -205,22 +235,3 @@ main {
     transform: rotateY(180deg);
 }
 
-.allFilters {
-    display: flex;
-    justify-content: space-around;
-    padding: 2%;
-    padding-right: 10px;
-    font-family: 'Orbitron', sans-serif;
-    background: rgba(31, 16, 73, 0.84);
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Orbitron', sans-serif;
-    padding: 3%;
-}
-
-.filters{
-    padding-right: 10px;
-}
