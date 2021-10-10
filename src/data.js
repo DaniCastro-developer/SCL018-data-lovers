@@ -4,6 +4,11 @@
 
 const filters = {
 
+searchFunction(rickandmorty, searchValue){
+  let onlySearch = rickandmorty.filter(character => character.name.toLowerCase().includes(searchValue.toLowerCase()));
+    return onlySearch
+},
+
 genderFunction(rickandmorty, gender){
   let onlyGender = rickandmorty.filter((character) => {
   return character.gender === gender;

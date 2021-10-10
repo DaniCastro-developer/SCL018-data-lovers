@@ -17,42 +17,37 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
 let rickandmorty = data.results;
 const div = document.getElementById('showCards');
 
-const makeCard = (characters) => {
-  //Declaro una variable para imprimir la lista de personajes
-  let list = ``;
-  const div = document.getElementById('showCards');
-  //Incio el bucle
+  const makeCard = (characters) => {
+    //Declaro una variable para imprimir la lista de personajes
+    let list = ``;
+    //Incio el bucle
 
-  for (let i=0; i<characters.length; i++ ){
-      list += `
-      <div class= "card">
-        <div id="printCharacters" class="cardContainer-inner">
-            
-          <div class="frontCard">
-              <img id="image" class="image" src="${characters[i].image}"/>
-              <div class="nametag">
-              <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
+    for (let i=0; i<characters.length; i++ ){
+        list += `
+        <div class= "card">
+          <div id="printCharacters" class="cardContainer-inner">
+              <div class="frontCard">
+                <img id="image" class="image" src="${characters[i].image}"/>
+                <div class="nametag">
+                <p id="nameChar" class="name-frontcard"> ${characters[i].name} </p>
+                </div>
               </div>
           </div>
-
-          <div class="backCard">
-            <div class="nameCardBack">
-              <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
-            </div>
-            <div class="description">
-              <p id="statusBack" class="statusBack"> ${characters[i].status} </p>
-              <p id="genderBack" class="genderBack"> ${characters[i].gender} </p>
-              <p id="speciesBack" class="speciesBack"> ${characters[i].species} </p>
-            </div>
-          </div>
-            
-        </div>
-      </div>`;
+        </div>`;
+    }
+    div.innerHTML = list;
   }
-  div.innerHTML = list;
-}
-makeCard(rickandmorty);
+  makeCard(rickandmorty);
 
+  const selectSearch= document.querySelector('#searchBar');
+
+  selectSearch.addEventListener('keyup', (e) => {
+    
+    const searchSelect = e.target.value;
+      div.innerHTML = "";
+      let onlySearch = filters.searchFunction(rickandmorty, searchSelect);
+      makeCard(onlySearch);
+  });
 
 const selectGender= document.querySelector('#filterGender');
 
@@ -100,4 +95,6 @@ selectLocation.addEventListener('change', (e) => {
     let location = valueLocation;
     let onlyLocation = filters.locationFunction(rickandmorty, location);
     makeCard(onlyLocation);
+    console.log(location)
 });
+
