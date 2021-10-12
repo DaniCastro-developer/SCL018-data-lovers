@@ -2,8 +2,8 @@
    
 // estas funciones son de ejemplo
 
-
 const filters = {
+
 
 searchFunction(rickandmorty, searchValue){
   let onlySearch = rickandmorty.filter(character => character.name.toLowerCase().includes(searchValue.toLowerCase()));
@@ -14,6 +14,7 @@ genderFunction(rickandmorty, gender){
   let onlyGender = rickandmorty.filter((character) => {
   return character.gender === gender;
   });
+  //console.log(onlyGender);
   return onlyGender;
 },
 
@@ -31,23 +32,26 @@ statusFunction(rickandmorty, status){
   return onlyStatus;
 },
 
-locationFunction(rickandmorty, location) {
-  let onlyLocation = rickandmorty.filter ((character) => {
+locationFunction(rickandmorty, location){
+  let onlyLocation = rickandmorty.filter((character) => {
   return character.location.name === location;
-});
-return (onlyLocation);
-
+  });
+  console.log(onlyLocation)
+  return onlyLocation;
+  
 },
 
-originFunction(rickandmorty, origin) {
-  let onlyOrigin = rickandmorty.filter ((character) => {
-  return character.origin.name === origin;
-});
-return (onlyOrigin);
+originFunction(rickandmorty, location){
+  let onlyLocation = rickandmorty.filter((character) => {
+  return character.location.name === location;
+  });
+  console.log(onlyLocation)
+  return onlyLocation;
+  
+},
 
-}
 
 }
   
 export default filters
-
+  
