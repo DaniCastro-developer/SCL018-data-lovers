@@ -256,7 +256,7 @@ main {
     width: 80px;
 }
 
-@media (max-width 960px){
+@media (max-width960px){
     .page1{
         padding: 0 3rem 0 3rem;
     }
