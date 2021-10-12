@@ -24,7 +24,7 @@ function goToUp(pxScreen){
       }
   })
 }
-goToUp(400)
+goToUp(500)
 
 
 let rickandmorty = data.results;
@@ -146,3 +146,12 @@ selectOrigin.addEventListener('change', (e) => {
     let onlyOrigin = filters.originFunction(rickandmorty, origin);
     makeCard(onlyOrigin);
 });
+
+
+const sound = document.getElementById('goToUp');
+
+document.addEventListener('onpress', function(e){
+  if(e.keycod == 32){
+    sound.innerHTML = '<audio src="Recursos/dub.mp3">'
+  }
+})
