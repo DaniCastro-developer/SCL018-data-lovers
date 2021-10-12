@@ -4,6 +4,31 @@
 
 const filters = {
 
+  orderAZ(rickandmorty) {
+    let orderCharacters = rickandmorty.sort((a,b) => {
+      if (a.name > b.name) {
+        return 1;
+      }
+      {
+        return -1;
+      }
+    });
+    return orderCharacters;
+    },
+    
+    orderZA(rickandmorty) {
+    let orderCharacters= rickandmorty.sort((a,b) => {
+      if (a.name < b.name) {
+        return 1;
+      }
+      {
+        return -1;
+      }
+    });
+    return orderCharacters;
+    },
+    
+
 
 searchFunction(rickandmorty, searchValue){
   let onlySearch = rickandmorty.filter(character => character.name.toLowerCase().includes(searchValue.toLowerCase()));
@@ -36,7 +61,6 @@ locationFunction(rickandmorty, location){
   let onlyLocation = rickandmorty.filter((character) => {
   return character.location.name === location;
   });
-  console.log(onlyLocation)
   return onlyLocation;
   
 },
@@ -45,7 +69,6 @@ originFunction(rickandmorty, location){
   let onlyLocation = rickandmorty.filter((character) => {
   return character.location.name === location;
   });
-  console.log(onlyLocation)
   return onlyLocation;
   
 },

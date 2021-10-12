@@ -63,15 +63,15 @@ main {
     font-family: 'Orbitron', sans-serif;
     padding: 2%;
 }
+
 .imageReturn {
     width: 120%;
     margin: -15%;
 }
 
 .imageAZ {
-    width: 25px;
-    height: 20px;
-
+    width: 22px;
+    height: 16px;
 }
 
 .buttonAZ {
@@ -79,6 +79,7 @@ main {
     border: none;
     margin: 5px;
     padding: 10px;
+    opacity: 80%;
 }
 
 .buttonAZ:hover {
@@ -186,7 +187,7 @@ main {
     background: rgba(31, 16, 73, 0.88);
     border: 3px solid #6BE458;
     box-sizing: border-box;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .frontCard .name-frontcard{
@@ -227,7 +228,10 @@ main {
     margin: auto;
     padding-top: 10px;
     text-align: center;
-    border-radius: 10px 10px 10px 10px;
+}
+
+.imageBack{
+    border-radius: 10px;
 }
 
 .nameBack {
