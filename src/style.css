@@ -68,6 +68,20 @@ main {
     margin: -15%;
 }
 
+.imageAZ {
+    width: 50%;
+    height: 50%;
+}
+
+.buttonAZ {
+    background: rgba(31, 16, 73, 0.84);
+    border: none;
+}
+
+.buttonAZ:hover {
+    background-color: rgb(28, 168, 28);
+}
+
 
 .filters{
     display: flex;
@@ -212,7 +226,7 @@ main {
     margin: auto;
     padding-top: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .nameBack {
