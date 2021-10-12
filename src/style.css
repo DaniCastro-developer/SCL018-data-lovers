@@ -171,7 +171,7 @@ main {
     background: rgba(31, 16, 73, 0.88);
     border: 3px solid #6BE458;
     box-sizing: border-box;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .frontCard .name-frontcard{

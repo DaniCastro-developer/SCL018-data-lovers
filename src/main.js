@@ -65,24 +65,22 @@ makeCard(rickandmorty);
       makeCard(onlySearch);
   });
 
-const selectGender= document.querySelector('#filterGender');
 
-//filters 
+//filters
 
-selectGender.addEventListener('change', (e) => {
-
+  const selectGender= document.querySelector('#filterGender');
+  selectGender.addEventListener('change', (e) => {
   const genderSelect = e.target.options;
   const valueGender = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
     let gender = valueGender;
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
-});
+  });
+
 
 const selectSpecies= document.querySelector('#filterSpecies');
-
 selectSpecies.addEventListener('change', (e) => {
-
   const genderSelect = e.target.options;
   const valueSpecie = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
@@ -92,9 +90,7 @@ selectSpecies.addEventListener('change', (e) => {
 });
 
 const selectStatus= document.querySelector('#filterStatus');
-
 selectStatus.addEventListener('change', (e) => {
-
   const statusSelect = e.target.options;
   const valueStatus = statusSelect[statusSelect.selectedIndex].text;
     div.innerHTML = "";
@@ -104,15 +100,21 @@ selectStatus.addEventListener('change', (e) => {
 });
 
 const selectLocation= document.querySelector('#filterLocation');
-
 selectLocation.addEventListener('change', (e) => {
-
   const locationSelect = e.target.options;
   const valueLocation = locationSelect[locationSelect.selectedIndex].text;
     div.innerHTML = "";
     let location = valueLocation;
     let onlyLocation = filters.locationFunction(rickandmorty, location);
     makeCard(onlyLocation);
-    console.log(location)
 });
 
+const selectOrigin= document.querySelector('#filterOrigin');
+selectOrigin.addEventListener('change', (e) => {
+  const originSelect = e.target.options;
+  const valueOrigin = originSelect[originSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let origin = valueOrigin;
+    let onlyOrigin = filters.originFunction(rickandmorty, origin);
+    makeCard(onlyOrigin);
+});

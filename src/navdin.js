@@ -105,17 +105,6 @@ const showNav = () => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
-      /*nav += `</select>
-      </div>
-      <div>
-              <input
-                type="text"
-                id="searchInput"
-                class="selectFilter"
-          
-              />
-            </div>
-      </nav>`;*/
       return nav;
     };
     
