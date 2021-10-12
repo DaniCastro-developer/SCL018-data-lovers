@@ -250,3 +250,9 @@ main {
     transform: rotateY(180deg);
 }
 
+#goToUp{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 80px;
+}
