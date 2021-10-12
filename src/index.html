@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-   <!-- falta agregar el meta responsive-->>
+   <!-- falta agregar el meta responsive-->
     
     <title>Rick y Morty</title>
     <link rel="stylesheet" href="style.css" />
@@ -17,11 +17,15 @@
       <img src="Recursos/logobienvenida.png" class ="logo-welcome">
       </div>
       <video src="Recursos/wallpaper_rickandmorty.mp4" autoplay muted loop></video>
-      <embed src= 'Recursos/intro.mp3' autostarty ='true' volume = "0.5" width="0" height="0">
       
        <div class ="button-start">
         <button class="startButton" id="startButton"> ingresar </button>
       </div>
+
+      <audio controls autoplay>
+        <source src="Recursos/intro.mp3" type="audio/mpeg" class = "srcAudio">
+      </audio> 
+
     </div>
 
     <!-- SEGUNDA PAGINA---------------------------------------------------->
@@ -35,21 +39,18 @@
       <div> <img src="Recursos/letrasRickandMorty.png" class="imageReturn" id="imageReturn">
       </div>
 
-      <div class ="orderFilters"> 
+      <div class="searchBar-style">
         <button class="buttonAZ"> <img src="Recursos/filtroAZ.png" class="imageAZ"> </button>
         <button class="buttonAZ"> <img src="Recursos/filtroZA.png" class="imageAZ"> </button>
-      </div>
-
-
-      <div class="searchBar-style">
         <input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="Encuentra tu personaje"/>
       </div>
     </header>
 
 
-    <nav class="allFilters" id="allFilters"> 
+    <nav class="filtersConteiner" id="filtersConteiner"> 
       <div class="filters" id="filters"></div>
     </nav>
+
 
     <main>
       <div class="cardContainer">
