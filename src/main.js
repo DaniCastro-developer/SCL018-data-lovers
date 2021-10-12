@@ -18,9 +18,9 @@ function goToUp(pxScreen){
     const scroll = document.documentElement.scrollTop;
     const goUp = document.getElementById('goToUp');
       if(scroll>pxScreen){
-        goUp.style.right=20 + 'px';
+        goUp.style.right= 20 + 'px';
       }else {
-        goUp.style.right = -100 + 'px';
+        goUp.style.right = -150 + 'px';
       }
   })
 }
