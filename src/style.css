@@ -104,12 +104,6 @@ main {
     background: rgba(31, 16, 73, 0.84)
 }
 
-.filter-Species{
-    display: flex;
-    justify-content: space-between;
-    background:rgba(31, 16, 73, 0.84);
-}
-
 
 .selectFilter {
     display: flex;
