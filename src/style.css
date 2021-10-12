@@ -63,19 +63,23 @@ main {
     font-family: 'Orbitron', sans-serif;
     padding: 2%;
 }
+
 .imageReturn {
     width: 120%;
     margin: -15%;
 }
 
 .imageAZ {
-    width: 50%;
-    height: 50%;
+    width: 22px;
+    height: 16px;
 }
 
 .buttonAZ {
     background: rgba(31, 16, 73, 0.84);
     border: none;
+    margin: 5px;
+    padding: 10px;
+    opacity: 80%;
 }
 
 .buttonAZ:hover {
@@ -226,6 +230,9 @@ main {
     margin: auto;
     margin-top: 10px;
     text-align: center;
+}
+
+.imageBack{
     border-radius: 10px;
 }
 

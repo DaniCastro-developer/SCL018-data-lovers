@@ -78,8 +78,23 @@ makeCard(rickandmorty);
       makeCard(onlySearch);
   });
 
+//order filters
+let selectAZ = document.getElementById("buttonAZ");
+let selectZA = document.getElementById("buttonZA");
 
-//filters
+  selectAZ.addEventListener("click", function () {
+      let characters = filters.orderAZ(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty); 
+    });
+
+  selectZA.addEventListener("click", function () {
+      let characters = filters.orderZA(rickandmorty);
+      rickandmorty = characters;
+      makeCard(rickandmorty); 
+    });
+
+//Other filters
 
   const selectGender= document.querySelector('#filterGender');
   selectGender.addEventListener('change', (e) => {
