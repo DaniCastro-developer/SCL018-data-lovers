@@ -98,15 +98,12 @@ let selectZA = document.getElementById("buttonZA");
 
   const selectGender= document.querySelector('#filterGender');
   selectGender.addEventListener('change', (e) => {
-    if  (selectGender.value === 'Genero') {
-      makeCard(rickandmorty);
-  } else {
-    const genderSelect = e.target.options;
-      const gender = genderSelect[genderSelect.selectedIndex].text;
-      div.innerHTML = "";
-      let onlyGender = filters.genderFunction(rickandmorty, gender);
-      makeCard(onlyGender);
-  }
+  const genderSelect = e.target.options;
+  const valueGender = genderSelect[genderSelect.selectedIndex].text;
+    div.innerHTML = "";
+    let gender = valueGender;
+    let onlyGender = filters.genderFunction(rickandmorty, gender);
+    makeCard(onlyGender);
   });
 
 
@@ -151,11 +148,11 @@ selectOrigin.addEventListener('change', (e) => {
 });
 
 
-// sound button enter
-const sound = document.getElementById('goToUp');
 
-document.addEventListener('click', function(e){
-  if(e){
-    sound.innerHTML = '<audio src="Recursos/dub.mp3">'
-  }
-})
+
+document.getElementById('goToUp').onclick=soundDubDub;
+
+function soundDubDub(){
+  const sound_dub= document.getElementById('dubdub');
+  sound_dub.play();
+}
