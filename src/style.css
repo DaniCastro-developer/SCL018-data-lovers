@@ -255,3 +255,9 @@ main {
     right: 20px;
     width: 80px;
 }
+
+@media (max-width 960px){
+    .page1{
+        padding: 0 3rem 0 3rem;
+    }
+}
