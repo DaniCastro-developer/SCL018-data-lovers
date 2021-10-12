@@ -153,8 +153,9 @@ selectOrigin.addEventListener('change', (e) => {
 
 // sound button enter
 const sound = document.getElementById('goToUp');
-sound.addEventListener('click', function(e){
-  if(e.keycod == 32){
+
+document.addEventListener('click', function(e){
+  if(e){
     sound.innerHTML = '<audio src="Recursos/dub.mp3">'
   }
 })
