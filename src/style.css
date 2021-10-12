@@ -69,13 +69,16 @@ main {
 }
 
 .imageAZ {
-    width: 50%;
-    height: 50%;
+    width: 25px;
+    height: 20px;
+
 }
 
 .buttonAZ {
     background: rgba(31, 16, 73, 0.84);
     border: none;
+    margin: 5px;
+    padding: 10px;
 }
 
 .buttonAZ:hover {
@@ -84,14 +87,10 @@ main {
 
 
 .filters{
-    display: flex;
-    justify-content: space-around;
     padding-right: 10px;
 }
 
-
-
-.allFilters {
+.filtersConteiner{
     display: flex;
     justify-content: space-around;
     padding: 1%;
@@ -100,16 +99,13 @@ main {
     background: rgba(31, 16, 73, 0.84)
 }
 
-.filter-Species{
+.allFilters {
     display: flex;
-    justify-content: space-between;
-    background:rgba(31, 16, 73, 0.84);
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-
 .selectFilter {
-    display: flex;
-    justify-content: space-between;
     color: white;
     background:  #120B26;
     margin: 15px;
@@ -138,6 +134,11 @@ main {
     width: 250px;
     height: 42px;
     border-radius: 10px;
+}
+
+.searchBar-style {
+    padding: 10px;
+
 }
 
 .searchBar:hover {
