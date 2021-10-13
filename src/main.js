@@ -1,6 +1,4 @@
 import filters from './data.js';
-import showNav from './navdin.js';
-
 import data from './data/rickandmorty/rickandmorty.js';
 
 window.addEventListener('load', lowVolume);
@@ -77,7 +75,6 @@ makeCard(rickandmorty);
 // search bar
 
   const selectSearch= document.querySelector('#searchBar');
-
   selectSearch.addEventListener('keyup', (e) => {
     
     const searchSelect = e.target.value;
@@ -116,7 +113,6 @@ selectGender.addEventListener('change', (e) => {
     makeCard(onlyGender);
 }
 });
-
 
 const selectSpecies= document.querySelector('#filterSpecies');
 selectSpecies.addEventListener('change', (e) => {

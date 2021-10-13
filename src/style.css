@@ -59,7 +59,7 @@ main {
 
 
 
-.header {
+.first-header {
     display: flex;
     justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
