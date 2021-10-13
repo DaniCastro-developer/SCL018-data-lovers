@@ -57,6 +57,7 @@ statusFunction(rickandmorty, status){
   return onlyStatus;
 },
 
+
 locationFunction(rickandmorty, location){
   let onlyLocation = rickandmorty.filter((character) => {
   return character.location.name === location;

@@ -12,7 +12,7 @@ video {
 }
 
 .welcome {
-    text-align: center;
+    position:  center;
 }
 
 .button-start {
@@ -57,14 +57,13 @@ main {
     padding-top: 0%;
 }
 
-
-
-.first-header {
+#up {
     display: flex;
     justify-content: space-between;
     font-family: 'Orbitron', sans-serif;
     padding: 2%;
 }
+
 
 .imageReturn {
     width: 120%;

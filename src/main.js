@@ -1,4 +1,6 @@
 import filters from './data.js';
+import showNav from './navdin.js'
+
 import data from './data/rickandmorty/rickandmorty.js';
 
 window.addEventListener('load', lowVolume);
@@ -7,6 +9,8 @@ var video = document.getElementById('myVideo');
 function lowVolume () {
   video.volume = 0.1;
 }
+
+document.getElementById("filters").innerHTML += showNav();
 
 
 document.getElementById("startButton").addEventListener("click",()=>{
@@ -178,3 +182,4 @@ function soundDubDub(){
   const sound_dub= document.getElementById('dubdub');
   sound_dub.play();
 }
+

@@ -107,8 +107,5 @@ const showNav = () => {
     
       return nav;
     };
-    
-    document.getElementById("filters").innerHTML += showNav();
-
 
 export default showNav
