@@ -1,5 +1,5 @@
 import filters from './data.js';
-import showNav from './navdin.js';
+import showNav from './navdin.js'
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -9,6 +9,8 @@ var video = document.getElementById('myVideo');
 function lowVolume () {
   video.volume = 0.1;
 }
+
+document.getElementById("filters").innerHTML += showNav();
 
 
 document.getElementById("startButton").addEventListener("click",()=>{
@@ -77,7 +79,6 @@ makeCard(rickandmorty);
 // search bar
 
   const selectSearch= document.querySelector('#searchBar');
-
   selectSearch.addEventListener('keyup', (e) => {
     
     const searchSelect = e.target.value;
@@ -116,7 +117,6 @@ selectGender.addEventListener('change', (e) => {
     makeCard(onlyGender);
 }
 });
-
 
 const selectSpecies= document.querySelector('#filterSpecies');
 selectSpecies.addEventListener('change', (e) => {
@@ -182,3 +182,4 @@ function soundDubDub(){
   const sound_dub= document.getElementById('dubdub');
   sound_dub.play();
 }
+
