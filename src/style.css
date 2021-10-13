@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-body {
-    margin: 0%;
-}
+
+
 video {
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     top: 0;
     left: 0;
 }
+
 .welcome {
     text-align: center;
 }
+
 .button-start {
     text-align: right;
     padding-right: 10%;
 }
+
 #startButton {
     border: none;
     font-family: 'Orbitron', sans-serif;
@@ -97,6 +99,7 @@ main {
 
 .allFilters {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding: 1%;
     padding-right: 10px;
@@ -258,8 +261,63 @@ main {
     margin-bottom: 10%;
 }
 
-@media (max-width960px){
-    .page1{
-        padding: 0;
+
+@media screen and (max-width:1024px){
+
+    video {
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
+
+}
+
+@media screen and (max-width:960px){
+
+    .logo-welcome {
+        width:40%;
+    }
+
+    .startButton {
+        width: 75vw;
+        height: 28vh;
+        font-size: 60%;
+    }
+
+    video {
+        position: fixed;
+        z-index: -1;
+        max-width: 960px;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .logo-welcome {
+        width:25%;
+    }
+
+    .startButton {
+        width: 38vw;
+        height: 14vh;
+        font-size: 30%;
+    }
+
+    video {
+        position: fixed;
+        z-index: -1;
+        max-width: 480px;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
 }

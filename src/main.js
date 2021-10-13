@@ -3,6 +3,14 @@ import showNav from './navdin.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
+window.addEventListener('load', lowVolume);
+
+var video = document.getElementById('myVideo');
+function lowVolume () {
+  video.volume = 0.1;
+}
+
+
 document.getElementById("startButton").addEventListener("click",()=>{
     document.getElementById("page1").hidden=true;
     document.getElementById("page2").hidden=false; 
