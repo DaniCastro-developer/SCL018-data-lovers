@@ -104,58 +104,76 @@ let selectZA = document.getElementById("buttonZA");
 
 //Other filters
 
-  const selectGender= document.querySelector('#filterGender');
-  selectGender.addEventListener('change', (e) => {
+const selectGender= document.querySelector('#filterGender');
+selectGender.addEventListener('change', (e) => {
+  if  (selectGender.value === 'Genero') {
+    makeCard(rickandmorty);
+} else {
   const genderSelect = e.target.options;
-  const valueGender = genderSelect[genderSelect.selectedIndex].text;
+    const gender = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
-    let gender = valueGender;
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
-  });
+}
+});
 
 
 const selectSpecies= document.querySelector('#filterSpecies');
 selectSpecies.addEventListener('change', (e) => {
+  if(selectSpecies.value === 'species'){
+    makeCard(rickandmorty);
+  } else {
   const genderSelect = e.target.options;
   const valueSpecie = genderSelect[genderSelect.selectedIndex].text;
     div.innerHTML = "";
     let species = valueSpecie;
     let onlySpecies = filters.speciesFunction(rickandmorty, species);
     makeCard(onlySpecies);
+  }
 });
 
 const selectStatus= document.querySelector('#filterStatus');
-selectStatus.addEventListener('change', (e) => {
+selectStatus.addEventListener('change', (e) => { 
+  if (selectStatus.value === 'status') {
+    makeCard(rickandmorty);
+  } else {
   const statusSelect = e.target.options;
   const valueStatus = statusSelect[statusSelect.selectedIndex].text;
     div.innerHTML = "";
     let status = valueStatus;
     let onlyStatus = filters.statusFunction(rickandmorty, status);
     makeCard(onlyStatus);
+  }
 });
 
 const selectLocation= document.querySelector('#filterLocation');
 selectLocation.addEventListener('change', (e) => {
+  if (selectLocation.value === 'Location') {
+    makeCard(rickandmorty);
+  }
+  else {
   const locationSelect = e.target.options;
   const valueLocation = locationSelect[locationSelect.selectedIndex].text;
     div.innerHTML = "";
     let location = valueLocation;
     let onlyLocation = filters.locationFunction(rickandmorty, location);
     makeCard(onlyLocation);
+    }
 });
 
 const selectOrigin= document.querySelector('#filterOrigin');
 selectOrigin.addEventListener('change', (e) => {
+  if (selectOrigin.value === 'Origin') {
+    makeCard(rickandmorty);
+  } else {
   const originSelect = e.target.options;
   const valueOrigin = originSelect[originSelect.selectedIndex].text;
     div.innerHTML = "";
     let origin = valueOrigin;
     let onlyOrigin = filters.originFunction(rickandmorty, origin);
     makeCard(onlyOrigin);
+  }
 });
-
-
 
 
 document.getElementById('goToUp').onclick=soundDubDub;

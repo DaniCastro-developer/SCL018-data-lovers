@@ -98,7 +98,7 @@ const showNav = () => {
       </div>
       <div class="filter-Location">
         <select name="" id="filterLocation" class="selectFilter">
-        <option value="Locacion" selected>Location</option>
+        <option value="Location" selected>Location</option>
         `;
     
       uniqueLocation.forEach((e) => {
