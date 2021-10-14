@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
+
 video {
     object-fit: cover;
     position: fixed;
@@ -249,7 +250,7 @@ main {
 }
 
 .card:hover.card{
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 #goToUp{
@@ -319,10 +320,18 @@ main {
         z-index: -1;
 
     }
-
-    .selectFilter {
-        color:tomato;
+    
+    .selectFilter{
+        width: 30vw;
+        height: 5vh;
+        font-size: 70%;
+        margin-left: 10px;
     }
-
+    .selectFilter{
+        width: 30vw;
+        height: 5vh;
+        font-size: 70%;
+        margin-left: 10px;
+    }
 
 }

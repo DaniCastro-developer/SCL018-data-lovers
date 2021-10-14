@@ -8,7 +8,6 @@ const testArray =
     "name": "Citadel of Ricks",
     "url": "" }}];
 
-
 describe('filters', () => {
 
   it('should be an object', () => {
