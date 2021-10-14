@@ -326,13 +326,11 @@ main {
         font-size: 70%;
         margin-left: 10px;
     }
-    
-    .searchBar{
-        width: 30vh;
+    .selectFilter{
+        width: 30vw;
         height: 5vh;
-    }
-    .imageReturn{
-        width: 80%;  
+        font-size: 70%;
+        margin-left: 10px;
     }
 
     
