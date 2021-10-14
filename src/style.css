@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
+
 video {
     object-fit: cover;
     position: fixed;
@@ -249,7 +250,7 @@ main {
 }
 
 .card:hover.card{
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 #goToUp{
@@ -264,7 +265,7 @@ main {
 
 /* Responsive for tablet */
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:960px){
 
     .logo-welcome {
         width:90%;
@@ -288,6 +289,22 @@ main {
         opacity: 100%;
     }
 
+    .selectFilter{
+        width: 15vw;
+        height: 5vh;
+        font-size: 70%;
+        margin-left: 10px;
+        padding:0%;
+    }
+
+    .allFilters{
+        padding:0%;
+    }
+
+    .filters {
+        padding:0%;
+    }
+
 }
 
 /* renponsive for cel */
@@ -305,6 +322,37 @@ main {
     }
 
 
+    .imageReturn {
+        width: 80%;
+        margin: -5%;
+    }
+    
+    .searchBar-style {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imageAZ {
+        width: 20px;
+        height: 15px;
+    }
+
+    .searchBar {
+        font-size: 10px;
+        width: 120px;
+        height: 42px;
+        margin: 5px;
+    }
+
+    .buttonAZ {
+        margin-right: 5px;
+        width: 40px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    
+
     #startButton  {
         width: 150px;
         height: 60px;
@@ -314,6 +362,23 @@ main {
         color:whitesmoke;
         left: 0px;
         top: 0px;
+        color:white;
+    }
+    
+    .selectFilter{
+        width: 15vw;
+        height: 5vh;
+        font-size: 50%;
+        margin-left: 3px;
+        padding:0%;
+    }
+
+    .allFilters{
+        padding:0%;
+    }
+
+    .filters {
+        padding:0%;
     }
 
 }
