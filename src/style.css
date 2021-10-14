@@ -5,8 +5,8 @@ video {
     object-fit: cover;
     position: fixed;
     z-index: -1;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -264,25 +264,28 @@ main {
 
 /* Responsive for tablet */
 
-@media screen and (min-width:481) and (max-width:960px){
+@media screen and (max-width:1000px){
 
     .logo-welcome {
-        width:40%;
+        width:90%;
+        padding-top: 5%;
     }
+
+    .button-start {
+        text-align: center;
+    }
+
 
     #startButton  {
-        width: 75px;
-        height: 28px;
-        font-size: 60%;
-    }
-
-    video {
-        position: fixed;
-        z-index: -1;
-        max-width: 960px;
-        height: auto;
-        top: 0;
-        left: 0;
+        width: 200px;
+        height: 80px;
+        font-size: 140%;
+        background: rgba(1, 1, 59, 0.64);
+        border: solid;
+        color:whitesmoke;
+        left: 0px;
+        top: 0px;
+        opacity: 100%;
     }
 
 }
@@ -292,7 +295,7 @@ main {
 @media screen and (max-width:480px){
 
     .logo-welcome {
-        width:75%;
+        width:80%;
         padding-top: 10%;
     }
 
@@ -301,28 +304,16 @@ main {
         padding-top: 2%;
     }
 
-    .srcAudio {
-        padding-top: 80%;
-        text-align: center;
-    }
 
     #startButton  {
         width: 150px;
         height: 60px;
         font-size: 100%;
-        background-color: rgb(28, 168, 28);
-        color:white;
+        background: rgba(2, 2, 41, 0.64);
+        border: solid;
+        color:whitesmoke;
+        left: 0px;
+        top: 0px;
     }
-
-    video {
-        position:fixed;
-        z-index: -1;
-
-    }
-
-    .selectFilter {
-        color:tomato;
-    }
-
 
 }
