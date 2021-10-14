@@ -13,7 +13,7 @@ video {
 }
 
 .welcome {
-    position:  center;
+    text-align:  center;
 }
 
 .button-start {
@@ -262,29 +262,18 @@ main {
 }
 
 
-@media screen and (max-width:1024px){
 
-    video {
-        object-fit: cover;
-        position: fixed;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+/* Responsive for tablet */
 
-}
-
-@media screen and (max-width:960px){
+@media screen and (min-width:481) and (max-width:960px){
 
     .logo-welcome {
         width:40%;
     }
 
-    .startButton {
-        width: 75vw;
-        height: 28vh;
+    #startButton  {
+        width: 75px;
+        height: 28px;
         font-size: 60%;
     }
 
@@ -299,25 +288,37 @@ main {
 
 }
 
+/* renponsive for cel */
+
 @media screen and (max-width:480px){
 
     .logo-welcome {
-        width:25%;
+        width:75%;
+        padding-top: 10%;
     }
 
-    .startButton {
-        width: 38vw;
-        height: 14vh;
-        font-size: 30%;
+    .button-start {
+        text-align: center;
+        padding-top: 2%;
+    }
+
+    .srcAudio {
+        padding-top: 80%;
+        text-align: center;
+    }
+
+    #startButton  {
+        width: 150px;
+        height: 60px;
+        font-size: 100%;
+        background-color: rgb(28, 168, 28);
+        color:white;
     }
 
     video {
-        position: fixed;
+        position:fixed;
         z-index: -1;
-        max-width: 480px;
-        height: auto;
-        top: 0;
-        left: 0;
+
     }
     
     .selectFilter{
@@ -333,5 +334,4 @@ main {
         margin-left: 10px;
     }
 
-    
 }
