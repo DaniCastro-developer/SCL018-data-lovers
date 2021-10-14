@@ -66,11 +66,11 @@ locationFunction(rickandmorty, location){
   
 },
 
-originFunction(rickandmorty, location){
-  let onlyLocation = rickandmorty.filter((character) => {
-  return character.location.name === location;
+originFunction(rickandmorty, origin){
+  let onlyOrigin = rickandmorty.filter((character) => {
+  return character.origin.name === origin;
   });
-  return onlyLocation;
+  return onlyOrigin;
   
 },
 

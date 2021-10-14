@@ -4,9 +4,7 @@ const testArray =
 [{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
  {id: 2, name: "Morty Smith", status: "Alive", species: "Human", gender: "Male", origin: "Earth", location: "Earth"},
   {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
-  {id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
-    "name": "Citadel of Ricks",
-    "url": "" }}];
+  {id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }}];
 
 describe('filters', () => {
 
@@ -58,9 +56,7 @@ describe('filters.statusFunction', () => {
   });
 
   it('return status characters', () => {
-    expect(filters.statusFunction(testArray, 'Dead')).toEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
-      "name": "Citadel of Ricks",
-      "url": "" }}]);
+    expect(filters.statusFunction(testArray, 'Dead')).toEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {"name": "Citadel of Ricks","url": "" }}]);
   });
 
 
@@ -74,9 +70,7 @@ describe('filters.speciesFunction', () => {
   });
 
   it('return species characters', () => {
-    expect(filters.speciesFunction(testArray, 'Humanoide')).toEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
-      "name": "Citadel of Ricks",
-      "url": "" }}]);
+    expect(filters.speciesFunction(testArray, 'Humanoide')).toEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {"name": "Citadel of Ricks", "url": "" }}]);
 
 });
 
@@ -90,13 +84,23 @@ describe('filters.originFunction', () => {
   });
 
   it('return origin characters', () => {
-    expect(filters.originFunction(testArray, 'name.Unknown')).toEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
-      "name": "Citadel of Ricks",
-      "url": "" }}]);
+    expect(filters.originFunction(testArray,'unknown')).toStrictEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {"name": "Citadel of Ricks", "url": "" }}]);
 
 });
 });
 
+
+describe('filters.locationFunction', () => {
+
+  it('should be a function', () => {
+    expect(typeof filters.locationFunction).toBe('function');
+  });
+
+  it('return location characters', () => {
+    expect(filters.locationFunction(testArray,'Citadel of Ricks')).toStrictEqual([{id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {"name": "Citadel of Ricks", "url": "" }}]);
+
+});
+});
 
 
 describe('filters.genderFunction', () => {
