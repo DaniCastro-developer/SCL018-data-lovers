@@ -18,7 +18,7 @@ const filters = {
     
     orderZA(rickandmorty) {
     let orderCharacters= rickandmorty.sort((a,b) => {
-      if (a.name < b.name) {
+      if (b.name > a.name) {
         return 1;
       }
       {
@@ -42,6 +42,8 @@ genderFunction(rickandmorty, gender){
   //console.log(onlyGender);
   return onlyGender;
 },
+
+
 
 speciesFunction(rickandmorty, species){
   let onlySpecies = rickandmorty.filter((character) => {
