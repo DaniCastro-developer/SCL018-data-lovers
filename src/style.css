@@ -246,8 +246,9 @@ main {
     color: white;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
+
 
 .card:hover.card{
     transform: rotateY(-180deg);
@@ -304,6 +305,8 @@ main {
     .filters {
         padding:0%;
     }
+
+    
     
 
 }
