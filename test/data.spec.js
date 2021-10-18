@@ -6,6 +6,16 @@ const testArray =
   {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
   {id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }}];
 
+
+const newArray = 
+[{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
+   {id: 2, name: "Zick Zack", status: "Alive", species: "Human", gender: "Male", origin: "Earth", location: "Earth"},
+    {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
+    {id: 4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }},
+    {id: 5, name: "Abradolf Lincler",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }
+  }];
+  
+  
 describe('filters', () => {
 
   it('should be an object', () => {
@@ -34,13 +44,12 @@ describe('filters', () => {
         expect(typeof filters.orderZA).toBe('function');
       });
 
-    it('return testArray width orderZA', () => {
-      expect(filters.orderZA(testArray)).toEqual([{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}, 
-      {id: 2, name: "Morty Smith", status: "Alive", species: "Human", gender: "Male", origin: "Earth", location: "Earth"},
-      {id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
-        "name": "Citadel of Ricks",
-        "url": "" }}, 
-       {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}]);
+    it('return newArray width orderZA', () => {
+      expect(filters.orderZA(newArray)).toEqual([{id: 2, name: "Zick Zack", status: "Alive", species: "Human", gender: "Male", origin: "Earth", location: "Earth"},
+      {id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
+       {id: 4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }},
+       {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
+       {id: 5, name: "Abradolf Lincler",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }}]);
   });
 
 });
@@ -114,6 +123,7 @@ describe('filters.genderFunction', () => {
 });
 
 });
+
 
 describe('filters.searchFunction', () => {
 
