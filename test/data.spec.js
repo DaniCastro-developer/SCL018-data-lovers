@@ -119,7 +119,8 @@ describe('filters.genderFunction', () => {
   });
 
   it('return gender characters', () => {
-    expect(filters.genderFunction(testArray, 'Female')).toEqual([{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}, {id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}]);
+    expect(filters.genderFunction(testArray, 'Female')).toEqual([{id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}, 
+    ]);
 });
 
 });
