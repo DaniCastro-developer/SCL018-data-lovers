@@ -115,6 +115,16 @@ describe('filters.genderFunction', () => {
 
 });
 
+describe('filters.searchFunction', () => {
 
+  it('should be a function', () => {
+    expect(typeof filters.searchFunction).toBe('function');
+  });
+
+  it('return searchValue characters', () => {
+    expect(filters.searchFunction(testArray, 'Summer')).toEqual([{id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"}]);
+});
+
+});
 
 });
