@@ -304,6 +304,7 @@ main {
     .filters {
         padding:0%;
     }
+    
 
 }
 
@@ -338,9 +339,9 @@ main {
     }
 
     .searchBar {
-        font-size: 10px;
-        width: 120px;
-        height: 42px;
+        font-size: 12px;
+        width: 160px;
+        height: 35px;
         margin: 5px;
     }
 
@@ -380,5 +381,17 @@ main {
     .filters {
         padding:0%;
     }
-
+    .nameBack {
+        font-size: 95%;
+        line-height: 12px;
+    }
+    .infoBack{
+        font-size: 90%;
+        line-height: 8px;
+    }
+    #goToUp{
+        right: 2px;
+        margin-bottom: 35%;
+        width:12vh;
+    }
 }
