@@ -267,7 +267,6 @@ main {
     transform: rotateY(-180deg);
     z-index: 2;
     width: 80px;
-    margin-left: 10%;
     margin-top: 5%;
     animation: clickHere;
     animation-duration: 1000s;
@@ -322,9 +321,11 @@ main {
     .filters {
         padding:0%;
     }
+    @keyframes clickHere{
+        0% {margin-left: 18%}
+        2% {left:-1000px}
+    }
 
-    
-    
 
 }
 
@@ -413,5 +414,14 @@ main {
         right: 2px;
         margin-bottom: 35%;
         width:12vh;
+    }
+
+    #click{
+        width: 50px;
+        margin-top: 10%;
+    }
+    @keyframes clickHere{
+        0% {margin-left: 20%}
+        2% {left:-1000px}
     }
 }
