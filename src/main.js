@@ -39,6 +39,8 @@ function goToUp(pxScreen){
 goToUp(600)
 
 
+
+
 let rickandmorty = data.results;
 const div = document.getElementById('showCards');
 

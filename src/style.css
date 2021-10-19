@@ -166,7 +166,7 @@ main {
 }
 
 .card.active {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .showCards {
@@ -215,7 +215,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
     -wekit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -262,9 +262,22 @@ main {
     margin-bottom: 10%;
 }
 
-.click{
+#click{
+    position: fixed;
     transform: rotateY(-180deg);
-    width: 60px;
+    z-index: 2;
+    width: 80px;
+    margin-left: 10%;
+    margin-top: 5%;
+    animation: clickHere;
+    animation-duration: 1000s;
+    animation-iteration-count: 1;
+    
+}
+/*animación de la flecha click*/
+@keyframes clickHere{
+    0% {margin-left: 10%}
+    2% {left:-1000px}
 }
 
 
