@@ -262,6 +262,10 @@ main {
     margin-bottom: 10%;
 }
 
+.click{
+    transform: rotateY(-180deg);
+    width: 60px;
+}
 
 
 /* Responsive for tablet */
