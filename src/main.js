@@ -23,6 +23,8 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
     document.getElementById("page1").hidden=false;
 },false);
 
+
+//--------función para botón pegajoso, para que aparezca desde los 600px-----
 function goToUp(pxScreen){
   window.addEventListener('scroll',() =>{
     const scroll = document.documentElement.scrollTop;
@@ -34,7 +36,7 @@ function goToUp(pxScreen){
       }
   })
 }
-goToUp(500)
+goToUp(600)
 
 
 let rickandmorty = data.results;
