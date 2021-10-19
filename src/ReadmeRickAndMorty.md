@@ -8,24 +8,52 @@ El Portal de Rick and Morty es una página para fans de la serie que deseen ver 
 
 <img src='Recursos/Inicio.jpg' width=400px>
 
-
+_______________
 ## Investigación y diseño.
 
 Nuestra página está orientada a fanáticos de la serie que quieran buscar acerca de los personajes , permitiéndoles visualizarlos de manera ordenada y filtrarlos según género, especie, status, lugar de origen o locación. También pueden encontrar una barra de búsqueda para localizar de manera más rápida a su personaje.
 
-## Prototipos en papel.
+### Prototipos en papel.
 
 <img src=Recursos\Prototipo2.jpg width=200px> <img src=Recursos\Prototipo3.jpg width=200px> 
 
-## Prototipo de baja fidelidad.
+
+### Prototipo de baja fidelidad.
 <img src=Recursos\prototipo1.png width=300px> <img src=Recursos\prototipo4.png width=300px>
 
-## Prototipo de alta fidelidad.
-Nuestro prototipo de alta fidelidad fue realizado en Figma.
 
+### Prototipo de alta fidelidad.
+Nuestro prototipo de alta fidelidad fue realizado en Figma, donde desarrollamos varias ideas de diseño optando al final por la que más adeptos tuvo en la etapa de feedback.
 
+https://www.figma.com/file/EUsIsmQ9N9AMm7Rf3T2zk2/Rick-and-Morty?node-id=0%3A1
 
 <img src=Recursos\Inicio.jpg width=300px>
-
 <img src=Recursos\pagina3.png width=300px>
 
+_________________
+## Responsive.
+El sitio web es adaptable a diferentes tamaños de pantallas y creamos prototipos para visualizarlos mejor.
+
+*Prototipo para celular*
+
+<img src=Recursos\Imágenes-sin-fondo\Celu1.png width=150px><img src=Recursos\Imágenes-sin-fondo\Celu2.png width=140px>
+
+*Prototipo para tablet*
+
+<img src=Recursos\Imágenes-sin-fondo\tablet1.png width=200px><img src=Recursos\Imágenes-sin-fondo\tablet1.png width=200px>
+
+*Prototipo para desktop*
+
+<img src=Recursos\Imágenes-sin-fondo\desk1.png width=300px>
+<img src=Recursos\Imágenes-sin-fondo\desk2.png width=300px>
+
+____________________________
+
+
+## Historias de Usuario.
+En base a las historias de usuarios fue como definimos la dirección de nuestro proyecto y las prioridades en cuanto al desarrollo de la página.
+
+<img src=Recursos\Imágenes-sin-fondo\Historias.png>
+
+
+## Test de usabilidad.
