@@ -183,3 +183,8 @@ function soundDubDub(){
   sound_dub.play();
 }
 
+document.getElementById('card').onclick = flipcard;
+
+function flipcard (){
+  
+}
