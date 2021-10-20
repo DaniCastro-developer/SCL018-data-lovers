@@ -250,9 +250,9 @@ main {
 }
 
 
-.card:hover.card{
+/*.card:hover.card{
     transform: rotateY(-180deg);
-}
+}*/
 
 #goToUp{
     position: fixed;
@@ -272,6 +272,10 @@ main {
     animation-duration: 5s;
     animation-iteration-count: 1;
     
+}
+
+.cardActive {
+    transform: rotateY(-180deg);
 }
 
 

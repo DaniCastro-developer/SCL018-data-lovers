@@ -1,6 +1,7 @@
 
-   
-// estas funciones son de ejemplo
+// Estas son las funciones que ocuparemos en main.js
+
+//Creamos un objeto filters que contiene las funciones
 
 const filters = {
 

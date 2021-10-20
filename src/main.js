@@ -3,15 +3,11 @@ import showNav from './navdin.js'
 
 import data from './data/rickandmorty/rickandmorty.js';
 
-window.addEventListener('load', lowVolume);
 
-var video = document.getElementById('myVideo');
-function lowVolume () {
-  video.volume = 0.1;
-}
-
+// -------- Llama a los id filters para mostrarlos en la barra de filtros ----- //
 document.getElementById("filters").innerHTML += showNav();
 
+// ----- ocultar y mostrar primera y segunda página ----  //
 
 document.getElementById("startButton").addEventListener("click",()=>{
     document.getElementById("page1").hidden=true;
@@ -24,35 +20,27 @@ document.getElementById("imageReturn").addEventListener("click",()=>{
 },false);
 
 
-//--------función para botón pegajoso, para que aparezca desde los 600px-----
-function goToUp(pxScreen){
-  window.addEventListener('scroll',() =>{
-    const scroll = document.documentElement.scrollTop;
-    const goUp = document.getElementById('goToUp');
-      if(scroll>pxScreen){
-        goUp.style.right= 0 + 'px';
-      }else {
-        goUp.style.right = -150 + 'px';
-      }
-  })
-}
-goToUp(600)
+// ----- hacer la variable de los datos e imprimirlos en pantalla ----- //
 
 
-
-
+// variable con toda la data 
 let rickandmorty = data.results;
+
+// div donde se muestras las tarjetas 
 const div = document.getElementById('showCards');
 
+
+// función que imprime las tarjetas en la pantalla
   const makeCard = (characters) => {
-    //Declaro una variable para imprimir la lista de personajes
+    //Declaro una variable vacía para imprimir la lista de personajes
     let list = ``;
     div.innerHTML ='';
-    //Incio el bucle
-
+    
+    //Incio del bucle for
     for (let i=0; i<characters.length; i++ ){
+      // A nuestra variable vacía se le va agregando este template string
         list += `
-
+      
         <div id="printCharacters" class="cardContainer-inner">
         <div class= "card" id= "card">
           <div class="frontCard" id="frontCard">
@@ -78,10 +66,12 @@ const div = document.getElementById('showCards');
   }
   div.innerHTML = list;
 }
+// Llamamos a la función makeCard y la llenamos con la data
 makeCard(rickandmorty);
 
-// search bar
 
+
+// search bar
   const selectSearch= document.querySelector('#searchBar');
   selectSearch.addEventListener('keyup', (e) => {
     
@@ -107,8 +97,8 @@ let selectZA = document.getElementById("buttonZA");
       makeCard(rickandmorty); 
     });
 
-//Other filters
 
+//Other filters
 const selectGender= document.querySelector('#filterGender');
 selectGender.addEventListener('change', (e) => {
   if  (selectGender.value === 'Genero') {
@@ -180,6 +170,23 @@ selectOrigin.addEventListener('change', (e) => {
 });
 
 
+
+//--------función para botón pegajoso, para que aparezca desde los 600px----- //
+function goToUp(pxScreen){
+  window.addEventListener('scroll',() =>{
+    const scroll = document.documentElement.scrollTop;
+    const goUp = document.getElementById('goToUp');
+      if(scroll>pxScreen){
+        goUp.style.right= 0 + 'px';
+      }else {
+        goUp.style.right = -150 + 'px';
+      }
+  })
+}
+goToUp(600)
+
+
+
 document.getElementById('goToUp').onclick=soundDubDub;
 
 function soundDubDub(){
@@ -187,8 +194,17 @@ function soundDubDub(){
   sound_dub.play();
 }
 
-document.getElementById('card').onclick = flipcard;
 
-function flipcard (){
-  
+const click = document.getElementsByClassName('cardContainer-inner');
+for (let i=0; i < click.length; i++ ) {
+  click[i].addEventListener ('click', () => {
+     click[i].firstElementChild.classList.toggle('cardActive');
+  })
 }
+
+
+
+
+// podríamos hacer una función con visibility:hidden con display:none 
+  
+
