@@ -102,7 +102,7 @@ selectGender.addEventListener('change', (e) => {
   if  (selectGender.value === 'Genero') {
     makeCard(rickandmorty);
 } else {
-  const genderSelect = e.target.options;
+    const genderSelect = e.target.options;
     const gender = genderSelect[genderSelect.selectedIndex].text;
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
@@ -172,7 +172,7 @@ function goToUp(pxScreen){
       if(scroll>pxScreen){
         goUp.style.right= 0 + 'px';
       }else {
-        goUp.style.right = -150 + 'px';
+        goUp.style.right = -160 + 'px';
       }
   })
 }

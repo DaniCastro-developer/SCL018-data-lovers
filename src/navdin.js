@@ -2,54 +2,48 @@ let rickandmorty = data.results;
 import data from './data/rickandmorty/rickandmorty.js';
 
 const showNav = () => {
-    // Ordenar alfabeticamente
     
-      //Selecting unique values in key species
-    
+    //Esta función descarta valores duplicados.
+     function uniqueValue(value, index, option) {
+      return option.indexOf(value) === index; 
+      // indexOf retorna el primer indice del arreglo donde se encuentra el elemento.
+    }
+
       let species = [];
-      let origin = [];
-      let status = [];
-      let gender = [];
-      let location = [];
-    
       rickandmorty.forEach((e) => {
-        //forEach() ejecutara la funcion indicada una vez por cada elemento del array, por lo que no dara nombres repetidos
-        species.push(e.species); //push añade nuevos elementos al final del array y devuelve uno nuevo, por lo que toma toda la data y devuelve los nombres no repetidos
+        //forEach() recorre toda la data y en la variable vacía guarda los elementos.
+        species.push(e.species); 
+        //push añade los elementos que encuentra al final del array vacio que creamos al inicio.
       });
-    
+      species = species.filter(uniqueValue);
+
+      let origin = [];
       rickandmorty.forEach((e) => {
         origin.push(e.origin.name);
       });
-    
+      origin = origin.filter(uniqueValue);
+
+      let status = [];
       rickandmorty.forEach((e) => {
         status.push(e.status);
       });
+      status = status.filter(uniqueValue);
     
+      let gender = [];
       rickandmorty.forEach((e) => {
         gender.push(e.gender);
       });
-    
+      gender = gender.filter(uniqueValue);
+
+      let location = [];
       rickandmorty.forEach((e) => {
         location.push(e.location.name);
       });
-    
-      function onlyUnique(value, index, self) {
-        //Esta función descarta o elimina valores duplicados.
-        return self.indexOf(value) === index; // Self tiene un alcance global. indexOf devuelve el indice, dentro del objeto string que realiza la llamada.
-      }
-      let uniqueSpecies = species.filter(onlyUnique); //El método filter recorrerá la matriz y dejará solo aquellas entradas que pasen la función onlyUnique.
-      // onlyUnique comprueba que
-    
-      let uniqueOrigin = origin.filter(onlyUnique);
-    
-      let uniqueStatus = status.filter(onlyUnique);
-    
-      let uniqueGender = gender.filter(onlyUnique);
+      location = location.filter(uniqueValue);
+
       
-    
-      let uniqueLocation = location.filter(onlyUnique);
       
-      //creating navigation with unique values
+      //template para la barra con filtros.
     
       let nav = `<nav class="allFilters"> 
         <div class="filter-Species">
@@ -57,9 +51,9 @@ const showNav = () => {
           <option value="species" selected>Species</option>
           `;
     
-      uniqueSpecies.forEach((e) => {
+      species.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
-        // console.log(e);
+        //console.log(e);
       });
     
       nav += `</select>
@@ -69,7 +63,7 @@ const showNav = () => {
         <option value="Origin" selected>Origin</option>
         `;
     
-      uniqueOrigin.forEach((e) => {
+      origin.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
@@ -79,7 +73,7 @@ const showNav = () => {
         <select name="" id="filterStatus" class="selectFilter">
         <option value="status" selected>Status</option>`;
     
-      uniqueStatus.forEach((e) => {
+      status.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
@@ -90,7 +84,7 @@ const showNav = () => {
         <option value="Genero" selected>Gender</option>
         `;
     
-      uniqueGender.forEach((e) => {
+      gender.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
@@ -101,7 +95,7 @@ const showNav = () => {
         <option value="Location" selected>Location</option>
         `;
     
-      uniqueLocation.forEach((e) => {
+      location.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
