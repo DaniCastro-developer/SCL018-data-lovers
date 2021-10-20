@@ -176,7 +176,7 @@ function goToUp(pxScreen){
     const scroll = document.documentElement.scrollTop;
     const goUp = document.getElementById('goToUp');
       if(scroll>pxScreen){
-        goUp.style.right= 30 + 'px';
+        goUp.style.right= 0 + 'px';
       }else {
         goUp.style.right = -150 + 'px';
       }

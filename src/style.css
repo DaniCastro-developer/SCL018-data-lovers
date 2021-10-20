@@ -13,7 +13,7 @@ video {
 }
 
 .welcome {
-    text-align:  center;
+    text-align: center;
 }
 
 .button-start {
@@ -254,7 +254,7 @@ main {
     position: fixed;
     bottom: 30px;
     right: 20px;
-    width: 110px;
+    width: 180px;
     margin-bottom: 10%;
 }
 
@@ -318,6 +318,11 @@ main {
         padding:0%;
     }
     
+    #goToUp{
+        right: 2px;
+        margin-bottom: 45%;
+        width:12vh;
+    }
 
 
 }
@@ -366,8 +371,6 @@ main {
         margin-top: 10px;
     }
     
-    
-
     #startButton  {
         width: 150px;
         height: 60px;
