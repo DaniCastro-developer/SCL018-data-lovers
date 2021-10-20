@@ -55,9 +55,9 @@ const div = document.getElementById('showCards');
               <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
             </div>
             <div class="description">
-              <p id="statusBack" class="infoBack"> Estado: ${characters[i].status} </p>
-              <p id="genderBack" class="infoBack"> Género: ${characters[i].gender} </p>
-              <p id="speciesBack" class="infoBack"> Especie: ${characters[i].species} </p>
+              <p id="statusBack" class="infoBack"> Status: ${characters[i].status} </p>
+              <p id="genderBack" class="infoBack"> Gender: ${characters[i].gender} </p>
+              <p id="speciesBack" class="infoBack"> Specie: ${characters[i].species} </p>
             </div>
           </div>
             
@@ -71,17 +71,16 @@ makeCard(rickandmorty);
 
 
 
-// search bar
+// llamado a barra de busqueda
   const selectSearch= document.querySelector('#searchBar');
   selectSearch.addEventListener('keyup', (e) => {
-    
     const searchSelect = e.target.value;
       div.innerHTML = "";
       let onlySearch = filters.searchFunction(rickandmorty, searchSelect);
       makeCard(onlySearch);
   });
 
-//order filters
+//lllamado a filtros de orden en data.js
 let selectAZ = document.getElementById("buttonAZ");
 let selectZA = document.getElementById("buttonZA");
 
@@ -98,7 +97,7 @@ let selectZA = document.getElementById("buttonZA");
     });
 
 
-//Other filters
+// llamado a otros filtros de data.js
 const selectGender= document.querySelector('#filterGender');
 selectGender.addEventListener('change', (e) => {
   if  (selectGender.value === 'Genero') {
@@ -177,7 +176,7 @@ function goToUp(pxScreen){
     const scroll = document.documentElement.scrollTop;
     const goUp = document.getElementById('goToUp');
       if(scroll>pxScreen){
-        goUp.style.right= 0 + 'px';
+        goUp.style.right= 30 + 'px';
       }else {
         goUp.style.right = -150 + 'px';
       }
@@ -186,15 +185,14 @@ function goToUp(pxScreen){
 goToUp(600)
 
 
-
+// Sonido al botón pegajoso
 document.getElementById('goToUp').onclick=soundDubDub;
-
 function soundDubDub(){
   const sound_dub= document.getElementById('dubdub');
   sound_dub.play();
 }
 
-
+// función para hacer clic y voltear las tarjetas
 const click = document.getElementsByClassName('cardContainer-inner');
 for (let i=0; i < click.length; i++ ) {
   click[i].addEventListener ('click', () => {
@@ -203,8 +201,4 @@ for (let i=0; i < click.length; i++ ) {
 }
 
 
-
-
-// podríamos hacer una función con visibility:hidden con display:none 
-  
 

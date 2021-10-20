@@ -165,10 +165,6 @@ main {
     backface-visibility: hidden;
 }
 
-.card.active {
-    transform: rotateY(180deg);
-}
-
 .showCards {
     display: flex;
     flex-flow: row wrap;
