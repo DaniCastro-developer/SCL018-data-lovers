@@ -46,8 +46,8 @@ Nuestro sitio web es adaptable a diferentes tamaños de pantallas, creando un di
 
 *Prototipo para desktop*
 
-<img src=Recursos\Imágenes-sin-fondo\desk1.png width=200px>
-<img src=Recursos\Imágenes-sin-fondo\desk2.png width=200px>
+<img src=Recursos\Imágenes-sin-fondo\desk1.png width=180px>
+<img src=Recursos\Imágenes-sin-fondo\desk2.png width=180px>
 
 _____________________
 
@@ -55,7 +55,7 @@ _____________________
 ## **Historias de Usuario.**
 En base a las historias de usuarios fue como definimos la dirección de nuestro proyecto y las prioridades en cuanto al desarrollo de la página.
 
-<img src=Recursos/Imágenes-sin-fondo/Historias.png>
+<img src=Recursos/Imágenes-sin-fondo/Historias.png width=300px>
 
 _____________________
 
