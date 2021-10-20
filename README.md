@@ -1,4 +1,4 @@
-<p align=center> <img src=Recursos\letrasRickandMorty.png width= 300px> </p>
+<p align=center> <img src=src/Recursos/letrasRickandMorty.png width= 300px> </p>
 
 # **El Portal de Rick and Morty.**
 
@@ -6,7 +6,7 @@ Rick and Morty es una serie de televisión estadounidense de animación para adu
 
 El Portal de Rick and Morty es una página diseñada para fans de la serie que deseen ver las características de sus personajes favoritos. 
 
-<img src='Recursos/Inicio.jpg' width=400px>
+<img src='src/Recursos/Inicio.jpg' width=400px>
 
 Descubre el [Portal de Rick and Morty](https://danicastro-developer.github.io/SCL018-data-lovers/src/index.html).
 
@@ -17,11 +17,11 @@ Nuestra página está orientada a fanáticos de la serie que quieran buscar acer
 
 ### *Prototipos en papel*.
 
-<img src=Recursos\Prototipo2.jpg width=300px> 
+<img src=src/Recursos\Prototipo2.jpg width=300px> 
 
 
 ### *Prototipo de baja fidelidad*.
-<img src=Recursos\prototipo1.png width=300px> <img src=Recursos\prototipo4.png width=300px>
+<img src=src/Recursos\prototipo1.png width=300px> <img src=src/Recursos\prototipo4.png width=300px>
 
 
 ### *Prototipo de alta fidelidad.*
@@ -29,8 +29,8 @@ Nuestro prototipo de alta fidelidad fue realizado en Figma, donde desarrollamos 
 
 https://www.figma.com/file/EUsIsmQ9N9AMm7Rf3T2zk2/Rick-and-Morty?node-id=0%3A1
 
-<img src=Recursos\Inicio.jpg width=300px>
-<img src=Recursos\pagina3.png width=300px>
+<img src=src/Recursos\Inicio.jpg width=300px>
+<img src=src/Recursos\pagina3.png width=300px>
 
 _________________
 ## **Responsive.**
@@ -38,16 +38,16 @@ Nuestro sitio web es adaptable a diferentes tamaños de pantallas, creando un di
 
 *Prototipo para celular*
 
-<img src=Recursos\Imágenes-sin-fondo\Celu1.png width=150px><img src=Recursos\Imágenes-sin-fondo\Celu2.png width=140px>
+<img src=src/Recursos\Imágenes-sin-fondo\Celu1.png width=150px><img src=src/Recursos\Imágenes-sin-fondo\Celu2.png width=140px>
 
 *Prototipo para tablet*
 
-<img src=Recursos\Imágenes-sin-fondo\tablet1.png width=200px><img src=Recursos\Imágenes-sin-fondo\tablet2.png width=200px>
+<img src=src/Recursos\Imágenes-sin-fondo\tablet1.png width=200px><img src=src/Recursos\Imágenes-sin-fondo\tablet2.png width=200px>
 
 *Prototipo para desktop*
 
-<img src=Recursos\Imágenes-sin-fondo\desk1.png width=180px>
-<img src=Recursos\Imágenes-sin-fondo\desk2.png width=180px>
+<img src=src/Recursos\Imágenes-sin-fondo\desk1.png width=180px>
+<img src=src/Recursos\Imágenes-sin-fondo\desk2.png width=180px>
 
 _____________________
 
@@ -55,12 +55,14 @@ _____________________
 ## **Historias de Usuario.**
 En base a las historias de usuarios fue como definimos la dirección de nuestro proyecto y las prioridades en cuanto al desarrollo de la página.
 
-<img src=Recursos/Imágenes-sin-fondo/Historias.png width=300px>
+<img src=src/Recursos/Imágenes-sin-fondo/Historias.png width=300px>
 
 _____________________
 
 ## **Test de usabilidad.**
 
-Uno de los problemas que se presentaron en los test de usabilidad fue cómo obtener más información de los personajes, ya que nuestras cartas se voltean al pasar el cursor sobre ellas. Esto generó mayores problemas en el formato para celular y tablet, ya que el voltear las tarjetas no era intuitivo. Es por esto que decidimos poner un gif al comienzo de la segunda página para que mostrara cómo usar las tarjetas y además modificar el hover por una función que actue con un clic en las tarjetas.
+Uno de los problemas que se presentaron en los test de usabilidad fue cómo obtener más información de los personajes, ya que nuestras cartas se voltean al pasar el cursor sobre ellas. Esto generó mayores problemas en el formato para celular y tablet, ya que el voltear las tarjetas no era intuitivo. Es por esto que decidimos poner un gif al comienzo de la segunda página para que mostrara cómo usar las tarjetas y además modificar el hover por unz función que se active con un clic.
+
+Otro elemento a considerar, luego de testear la usabilidad, fue el idioma, ya que nuestra data estaba en inglés y nuestra interfaz en español, por lo que luego del feedback recibido decidimos dejar todo en inglés.
 
 Con respecto a las otras funciones de la página, nuestros usuarios no presentaron mayor dificultad para usarla, ya que nuestra página tiene un diseño simple y preciso, ayudando a que los usuarios naveguen con fluidez.

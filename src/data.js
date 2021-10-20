@@ -10,7 +10,7 @@ const filters = {
       if (a.name > b.name) {
         return 1;
       }
-      {
+      else {
         return -1;
       }
     });
@@ -22,7 +22,7 @@ const filters = {
       if (b.name > a.name) {
         return 1;
       }
-      {
+      else {
         return -1;
       }
     });

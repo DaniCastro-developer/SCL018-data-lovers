@@ -75,7 +75,6 @@ makeCard(rickandmorty);
   const selectSearch= document.querySelector('#searchBar');
   selectSearch.addEventListener('keyup', (e) => {
     const searchSelect = e.target.value;
-      div.innerHTML = "";
       let onlySearch = filters.searchFunction(rickandmorty, searchSelect);
       makeCard(onlySearch);
   });
@@ -105,7 +104,6 @@ selectGender.addEventListener('change', (e) => {
 } else {
   const genderSelect = e.target.options;
     const gender = genderSelect[genderSelect.selectedIndex].text;
-    div.innerHTML = "";
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
 }
@@ -118,7 +116,6 @@ selectSpecies.addEventListener('change', (e) => {
   } else {
   const genderSelect = e.target.options;
   const valueSpecie = genderSelect[genderSelect.selectedIndex].text;
-    div.innerHTML = "";
     let species = valueSpecie;
     let onlySpecies = filters.speciesFunction(rickandmorty, species);
     makeCard(onlySpecies);
@@ -132,7 +129,6 @@ selectStatus.addEventListener('change', (e) => {
   } else {
   const statusSelect = e.target.options;
   const valueStatus = statusSelect[statusSelect.selectedIndex].text;
-    div.innerHTML = "";
     let status = valueStatus;
     let onlyStatus = filters.statusFunction(rickandmorty, status);
     makeCard(onlyStatus);
@@ -147,7 +143,6 @@ selectLocation.addEventListener('change', (e) => {
   else {
   const locationSelect = e.target.options;
   const valueLocation = locationSelect[locationSelect.selectedIndex].text;
-    div.innerHTML = "";
     let location = valueLocation;
     let onlyLocation = filters.locationFunction(rickandmorty, location);
     makeCard(onlyLocation);
@@ -161,7 +156,6 @@ selectOrigin.addEventListener('change', (e) => {
   } else {
   const originSelect = e.target.options;
   const valueOrigin = originSelect[originSelect.selectedIndex].text;
-    div.innerHTML = "";
     let origin = valueOrigin;
     let onlyOrigin = filters.originFunction(rickandmorty, origin);
     makeCard(onlyOrigin);
