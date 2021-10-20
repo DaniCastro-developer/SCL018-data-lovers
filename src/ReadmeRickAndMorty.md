@@ -47,7 +47,7 @@ El sitio web es adaptable a diferentes tamaños de pantallas y creamos prototipo
 <img src=Recursos\Imágenes-sin-fondo\desk1.png width=300px>
 <img src=Recursos\Imágenes-sin-fondo\desk2.png width=300px>
 
-____________________________
+_____________________
 
 
 ## Historias de Usuario.
@@ -55,5 +55,5 @@ En base a las historias de usuarios fue como definimos la dirección de nuestro 
 
 <img src=Recursos\Imágenes-sin-fondo\Historias.png>
 
-
+_____________________
 ## Test de usabilidad.

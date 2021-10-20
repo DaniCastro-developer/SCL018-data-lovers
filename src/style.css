@@ -262,6 +262,18 @@ main {
     margin-bottom: 10%;
 }
 
+#click{
+    position: fixed;
+    transform: rotateY(-180deg);
+    z-index: 2;
+    width: 80px;
+    left: 10%;
+    margin-top: 5%;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    
+}
+
 
 
 /* Responsive for tablet */
@@ -305,9 +317,8 @@ main {
     .filters {
         padding:0%;
     }
+    
 
-    
-    
 
 }
 
@@ -397,4 +408,6 @@ main {
         margin-bottom: 35%;
         width:12vh;
     }
+
+   
 }
