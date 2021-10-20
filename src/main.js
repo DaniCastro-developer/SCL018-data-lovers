@@ -179,14 +179,28 @@ selectOrigin.addEventListener('change', (e) => {
 
 
 document.getElementById('goToUp').onclick=soundDubDub;
-
 function soundDubDub(){
   const sound_dub= document.getElementById('dubdub');
   sound_dub.play();
 }
 
-document.getElementById('card').onclick = flipcard;
 
-function flipcard (){
+ //función para dar vueltas las cartas
+
+
+  //Esta función funciona 
+  const clickCard= document.getElementById('printCharacters');
+  clickCard.addEventListener ('click', ()=> { 
+    const click = document.getElementById('card');
+    click.classList.toggle('cardActive');
+  })
+
   
-}
+  /*document.getElementById('printCharacters').onclick = clickCard;
+  function clickCard () {
+    const click = document.getElementById('card');
+    click.classList.toggle('cardActive');
+  }*/
+  
+
+   
