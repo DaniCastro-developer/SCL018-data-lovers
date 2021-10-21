@@ -262,7 +262,7 @@ main {
     transform: rotateY(-180deg);
     z-index: 2;
     width: 80px;
-    left: 10%;
+    left: 14%;
     margin-top: 5%;
     animation-duration: 5s;
     animation-iteration-count: 1;
