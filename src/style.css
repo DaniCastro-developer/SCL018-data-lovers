@@ -155,7 +155,7 @@ main {
 }
 
 .card {
-    margin: 12px;
+    margin: 17px;
     position: relative;
     transition: 0.3s ease-in-out;
     transform: rotateY(0deg);
@@ -324,7 +324,12 @@ main {
     #goToUp{
         right: 2px;
         margin-bottom: 45%;
-        width:12vh;
+        width:14vh;
+    }
+
+    #click{
+        left: 16%;
+        margin-top: 15%;
     }
 
 
@@ -346,13 +351,14 @@ main {
 
 
     .imageReturn {
-        width: 80%;
-        margin: -5%;
+        width: 83%;
+        margin: -1%;
     }
     
     .searchBar-style {
         display: flex;
         flex-direction: row;
+        font-size: 10px;
     }
 
     .imageAZ {
@@ -412,7 +418,16 @@ main {
     #goToUp{
         right: 2px;
         margin-bottom: 35%;
-        width:12vh;
+        width:14vh;
+    }
+
+    #click{
+        
+        left: 20%;
+        margin-top: 30%;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        
     }
 
    
