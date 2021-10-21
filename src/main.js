@@ -5,18 +5,18 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 // -------- Llama a los id filters para mostrarlos en la barra de filtros ----- //
-document.getElementById("filters").innerHTML += showNav();
+document.getElementById('filters').innerHTML += showNav();
 
 // ----- ocultar y mostrar primera y segunda página ----  //
 
-document.getElementById("startButton").addEventListener("click",()=>{
-    document.getElementById("page1").hidden=true;
-    document.getElementById("page2").hidden=false; 
+document.getElementById('startButton').addEventListener('click',()=>{
+    document.getElementById('page1').hidden=true;
+    document.getElementById('page2').hidden=false; 
 },false);
 
-document.getElementById("imageReturn").addEventListener("click",()=>{
-    document.getElementById("page2").hidden=true;
-    document.getElementById("page1").hidden=false;
+document.getElementById('imageReturn').addEventListener('click',()=>{
+    document.getElementById('page2').hidden=true;
+    document.getElementById('page1').hidden=false;
 },false);
 
 
@@ -88,16 +88,16 @@ makeCard(rickandmorty);
   });
 
 //lllamado a filtros de orden en data.js
-let selectAZ = document.getElementById("buttonAZ");
-let selectZA = document.getElementById("buttonZA");
+let selectAZ = document.getElementById('buttonAZ');
+let selectZA = document.getElementById('buttonZA');
 
-  selectAZ.addEventListener("click", function () {
+  selectAZ.addEventListener('click', function () {
       let characters = filters.orderAZ(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty); 
     });
 
-  selectZA.addEventListener("click", function () {
+  selectZA.addEventListener('click', function () {
       let characters = filters.orderZA(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty); 
