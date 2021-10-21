@@ -27,7 +27,7 @@ Nuestra página está orientada a fanáticos de la serie que quieran buscar acer
 ### *Prototipo de alta fidelidad.*
 Nuestro prototipo de alta fidelidad fue realizado en Figma, donde desarrollamos varias ideas de diseño optando al final por la que más adeptos tuvo en la etapa de feedback.
 
-https://www.figma.com/file/EUsIsmQ9N9AMm7Rf3T2zk2/Rick-and-Morty?node-id=0%3A1
+Puedes revisar los prototipos en [Figma.](https://www.figma.com/file/EUsIsmQ9N9AMm7Rf3T2zk2/Rick-and-Morty?node-id=0%3A1)
 
 <img src=src/Recursos\Inicio.jpg width=300px>
 <img src=src/Recursos\pagina3.png width=300px>

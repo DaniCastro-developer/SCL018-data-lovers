@@ -87,7 +87,7 @@ makeCard(rickandmorty);
       makeCard(onlySearch);
   });
 
-//lllamado a filtros de orden en data.js
+//llamado a filtros de orden en data.js
 let selectAZ = document.getElementById("buttonAZ");
 let selectZA = document.getElementById("buttonZA");
 
@@ -193,6 +193,7 @@ function soundDubDub(){
   const sound_dub= document.getElementById('dubdub');
   sound_dub.play();
 }
+
 
 
 // función set Timeout para click
