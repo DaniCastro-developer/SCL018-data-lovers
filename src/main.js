@@ -65,6 +65,14 @@ const div = document.getElementById('showCards');
       </div>`;
   }
   div.innerHTML = list;
+
+  // función para hacer clic y voltear las tarjetas
+const click = document.getElementsByClassName('cardContainer-inner');
+for (let i=0; i < click.length; i++ ) {
+  click[i].addEventListener ('click', () => {
+     click[i].firstElementChild.classList.toggle('cardActive');
+  })
+}
 }
 // Llamamos a la función makeCard y la llenamos con la data
 makeCard(rickandmorty);
@@ -186,13 +194,12 @@ function soundDubDub(){
   sound_dub.play();
 }
 
-// función para hacer clic y voltear las tarjetas
-const click = document.getElementsByClassName('cardContainer-inner');
-for (let i=0; i < click.length; i++ ) {
-  click[i].addEventListener ('click', () => {
-     click[i].firstElementChild.classList.toggle('cardActive');
-  })
+
+// función set Timeout para click
+
+function timeOut () {
+  let gif = document.querySelector('#click');
+  gif.classList.add('hidden');
 }
-
-
+setTimeout(timeOut,15000)
 

@@ -46,8 +46,7 @@ Nuestro sitio web es adaptable a diferentes tamaños de pantallas, creando un di
 
 *Prototipo para desktop*
 
-<img src=src/Recursos\Imágenes-sin-fondo\desk1.png width=180px>
-<img src=src/Recursos\Imágenes-sin-fondo\desk2.png width=180px>
+<img src=src/Recursos\Imágenes-sin-fondo\desk1.png width=200px> <img src=src/Recursos\Imágenes-sin-fondo\desk2.png width=200px>
 
 _____________________
 

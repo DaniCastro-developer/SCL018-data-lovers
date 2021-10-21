@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
-
 video {
     object-fit: cover;
     position: fixed;
@@ -274,6 +273,10 @@ main {
     transform: rotateY(-180deg);
 }
 
+.hidden {
+    display: none;
+    visibility: hidden;
+}
 
 
 /* Responsive for tablet */
