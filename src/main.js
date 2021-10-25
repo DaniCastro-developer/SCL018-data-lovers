@@ -91,13 +91,13 @@ makeCard(rickandmorty);
 let selectAZ = document.getElementById('buttonAZ');
 let selectZA = document.getElementById('buttonZA');
 
-  selectAZ.addEventListener('click', function () {
+  selectAZ.addEventListener('click', () => {
       let characters = filters.orderAZ(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty); 
     });
 
-  selectZA.addEventListener('click', function () {
+  selectZA.addEventListener('click', () => {
       let characters = filters.orderZA(rickandmorty);
       rickandmorty = characters;
       makeCard(rickandmorty); 

@@ -5,7 +5,7 @@
 
 const filters = {
 
-  orderAZ(rickandmorty) {
+  orderAZ: function (rickandmorty) {
     let orderCharacters = rickandmorty.sort((a,b) => {
       if (a.name > b.name) {
         return 1;
@@ -17,7 +17,7 @@ const filters = {
     return orderCharacters;
     },
     
-    orderZA(rickandmorty) {
+    orderZA: function (rickandmorty) {
     let orderCharacters= rickandmorty.sort((a,b) => {
       if (b.name > a.name) {
         return 1;
@@ -31,12 +31,12 @@ const filters = {
     
 
 
-searchFunction(rickandmorty, searchValue){
+searchFunction: function (rickandmorty, searchValue){
   let onlySearch = rickandmorty.filter(character => character.name.toLowerCase().includes(searchValue.toLowerCase()));
     return onlySearch
 },
 
-genderFunction(rickandmorty, gender){
+genderFunction: function (rickandmorty, gender){
   let onlyGender = rickandmorty.filter((character) => {
   return character.gender === gender;
   });
@@ -46,14 +46,14 @@ genderFunction(rickandmorty, gender){
 
 
 
-speciesFunction(rickandmorty, species){
+speciesFunction: function (rickandmorty, species){
   let onlySpecies = rickandmorty.filter((character) => {
   return character.species === species;
   });
   return onlySpecies;
 },
 
-statusFunction(rickandmorty, status){
+statusFunction: function (rickandmorty, status){
   let onlyStatus = rickandmorty.filter((character) => {
   return character.status === status;
   });
@@ -61,7 +61,7 @@ statusFunction(rickandmorty, status){
 },
 
 
-locationFunction(rickandmorty, location){
+locationFunction: function(rickandmorty, location){
   let onlyLocation = rickandmorty.filter((character) => {
   return character.location.name === location;
   });
@@ -69,7 +69,7 @@ locationFunction(rickandmorty, location){
   
 },
 
-originFunction(rickandmorty, origin){
+originFunction: function(rickandmorty, origin){
   let onlyOrigin = rickandmorty.filter((character) => {
   return character.origin.name === origin;
   });
