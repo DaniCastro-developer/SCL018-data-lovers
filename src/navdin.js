@@ -17,6 +17,7 @@ const showNav = () => {
       });
       species = species.filter(uniqueValue);
 
+
       let origin = [];
       rickandmorty.forEach((e) => {
         origin.push(e.origin.name);
@@ -45,9 +46,7 @@ const showNav = () => {
       
       //template para la barra con filtros.
     
-      let nav = `<nav class="allFilters"> 
-        <div class="filter-Species">
-          <select name="" id="filterSpecies" class="selectFilter">
+      let nav = `<select name="" id="filterSpecies" class="selectFilter">
           <option value="species" selected>Species</option>
           `;
     
@@ -57,8 +56,6 @@ const showNav = () => {
       });
     
       nav += `</select>
-        </div>
-      <div class="filter-Origin">
         <select name="" id="filterOrigin" class="selectFilter">
         <option value="Origin" selected>Origin</option>
         `;
@@ -68,8 +65,6 @@ const showNav = () => {
       });
     
       nav += `</select>
-      </div>
-      <div class="filter-Status">
         <select name="" id="filterStatus" class="selectFilter">
         <option value="status" selected>Status</option>`;
     
@@ -78,8 +73,6 @@ const showNav = () => {
       });
     
       nav += `</select>
-        </div>
-      <div class="filter-Gender">
         <select name="filterGender" id="filterGender" class="selectFilter">
         <option value="Genero" selected>Gender</option>
         `;
@@ -89,8 +82,6 @@ const showNav = () => {
       });
     
       nav += `</select>
-      </div>
-      <div class="filter-Location">
         <select name="" id="filterLocation" class="selectFilter">
         <option value="Location" selected>Location</option>
         `;

@@ -88,20 +88,13 @@ main {
 }
 
 
-.filters{
-    display: flex;
-    justify-content: space-around;
-    padding-right: 10px;
-}
-
-
-
-.allFilters {
+#filtersContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 1%;
-    padding-right: 10px;
+    padding-right: 7px;
+    margin: 0px 100px 0px 100px;
     font-family: 'Orbitron', sans-serif;
     background: rgba(31, 16, 73, 0.84)
 }
@@ -154,6 +147,20 @@ main {
 
 }
 
+.backCard{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color:#26174e;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    -wekit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 .card {
     margin: 17px;
     position: relative;
@@ -200,22 +207,10 @@ main {
     font-size: 15px;
 }
 
-.backCard{
-    height: 251px;
-    width: 100%;
-    color: white;
-    background-color:#26174e;
-    border-radius: 10px;
-    margin-top: 5%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotateY(180deg);
-    -wekit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
+
 
 .backCard .imageBack {
+    padding-top: 5px;
     width: 109px;
     height: 98px;
     display:block;
@@ -244,10 +239,6 @@ main {
     font-size: 12px;
 }
 
-
-/*.card:hover.card{
-    transform: rotateY(-180deg);
-}*/
 
 #goToUp{
     position: fixed;
@@ -281,7 +272,7 @@ main {
 
 /* Responsive for tablet */
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1024px){
 
     .logo-welcome {
         width:90%;
@@ -309,18 +300,24 @@ main {
         width: 15vw;
         height: 5vh;
         font-size: 70%;
-        margin-left: 10px;
-        padding:0%;
+        margin: 4px;
+        padding: 0% ;
     }
 
-    .allFilters{
-        padding:0%;
+    #filtersContainer {
+        margin: 0px 50px 0px 50px;
     }
 
-    .filters {
-        padding:0%;
+    .nameBack {
+        font-size: 18px;
+        line-height: 12px;
     }
-    
+    .infoBack{
+        font-size: 16px;
+        line-height: 8px;
+    }
+
+   
     #goToUp{
         right: 2px;
         margin-bottom: 45%;
@@ -396,23 +393,23 @@ main {
         width: 15vw;
         height: 5vh;
         font-size: 50%;
-        margin-left: 3px;
-        padding:0%;
+        padding: 0% ;
+        margin-left: 0%;
+        border-radius: 7px;
     }
 
-    .allFilters{
-        padding:0%;
+    #filtersContainer {
+        margin: 0px 50px 0px 50px;
     }
 
-    .filters {
-        padding:0%;
-    }
+
+
     .nameBack {
-        font-size: 95%;
+        font-size: 17px;
         line-height: 12px;
     }
     .infoBack{
-        font-size: 90%;
+        font-size: 15px;
         line-height: 8px;
     }
     #goToUp{

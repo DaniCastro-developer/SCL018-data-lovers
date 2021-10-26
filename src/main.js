@@ -5,7 +5,7 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 // -------- Llama a los id filters para mostrarlos en la barra de filtros ----- //
-document.getElementById('filters').innerHTML += showNav();
+document.getElementById('filtersContainer').innerHTML += showNav();
 
 // ----- ocultar y mostrar primera y segunda página ----  //
 
@@ -40,25 +40,18 @@ const div = document.getElementById('showCards');
     for (let i=0; i<characters.length; i++ ){
       // A nuestra variable vacía se le va agregando este template string
         list += `
-      
         <div id="printCharacters" class="cardContainer-inner">
         <div class= "card" id= "card">
           <div class="frontCard" id="frontCard">
               <img id="image" class="image" src="${characters[i].image}"/>
-              <div class="nametag">
               <p id="nameFront" class="name-frontcard"> ${characters[i].name} </p>
-              </div>
           </div>
           <div class="backCard">
             <img id="imageBack" class="imageBack" src="${characters[i].image}"/>
-            <div class="nameCardBack">
               <p id="nameBack" class="nameBack"> ${characters[i].name} </p>
-            </div>
-            <div class="description">
               <p id="statusBack" class="infoBack"> Status: ${characters[i].status} </p>
               <p id="genderBack" class="infoBack"> Gender: ${characters[i].gender} </p>
               <p id="speciesBack" class="infoBack"> Specie: ${characters[i].species} </p>
-            </div>
           </div>
             
         </div>
