@@ -88,13 +88,13 @@ let selectZA = document.getElementById('buttonZA');
   selectAZ.addEventListener('click', () => {
       let characters = filters.orderAZ(rickandmorty);
       newArray = characters;
-      makeCard(characters); 
+      makeCard(newArray); 
     });
 
   selectZA.addEventListener('click', () => {
       let characters = filters.orderZA(rickandmorty);
       newArray = characters;
-      makeCard(characters); 
+      makeCard(newArray); 
     });
 
 
@@ -128,6 +128,12 @@ selectLocation.addEventListener('change', (e) => {
     
 });
 
+const selectOrigin= document.querySelector('#filterOrigin');
+selectOrigin.addEventListener('change', (e) => {
+    let onlyOrigin = filters.originFunction(rickandmorty, e.target.value);
+    newArray = onlyOrigin;
+    makeCard(onlyOrigin);
+});
 
 
 

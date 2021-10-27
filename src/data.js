@@ -52,6 +52,10 @@ locationFunction: function (rickandmorty, location){
   return rickandmorty.filter(character =>  character.location.name === location);
 },
 
+originFunction: function (rickandmorty, origin) {
+  return rickandmorty.filter (character => character.origin.name === origin);
+}
+
 }
   
 export default filters

@@ -242,7 +242,7 @@ main {
 #goToUp{
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 17px;
     width: 180px;
     margin-bottom: 10%;
 }
@@ -252,8 +252,8 @@ main {
     transform: rotateY(-180deg);
     z-index: 2;
     width: 80px;
-    left: 14%;
-    margin-top: 5%;
+    left: 12%;
+    margin-top: 8%;
     animation-duration: 5s;
     animation-iteration-count: 1;
     
