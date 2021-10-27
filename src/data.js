@@ -28,7 +28,7 @@ const filters = {
     });
     return orderCharacters;
     },
-    
+
 
 
 searchFunction: function (rickandmorty, searchValue){
@@ -37,46 +37,24 @@ searchFunction: function (rickandmorty, searchValue){
 },
 
 genderFunction: function (rickandmorty, gender){
-  let onlyGender = rickandmorty.filter((character) => {
-  return character.gender === gender;
-  });
-  //console.log(onlyGender);
-  return onlyGender;
+  return rickandmorty.filter(character => character.gender === gender);
 },
 
-
-
 speciesFunction: function (rickandmorty, species){
-  let onlySpecies = rickandmorty.filter((character) => {
-  return character.species === species;
-  });
-  return onlySpecies;
+  return rickandmorty.filter(character => character.species === species);
 },
 
 statusFunction: function (rickandmorty, status){
-  let onlyStatus = rickandmorty.filter((character) => {
-  return character.status === status;
-  });
-  return onlyStatus;
+  return rickandmorty.filter(character => character.status === status);
 },
 
-
-locationFunction: function(rickandmorty, location){
-  let onlyLocation = rickandmorty.filter((character) => {
-  return character.location.name === location;
-  });
-  return onlyLocation;
-  
+locationFunction: function (rickandmorty, location){
+  return rickandmorty.filter(character =>  character.location.name === location);
 },
 
-originFunction: function(rickandmorty, origin){
-  let onlyOrigin = rickandmorty.filter((character) => {
-  return character.origin.name === origin;
-  });
-  return onlyOrigin;
-  
-},
-
+originFunction: function (rickandmorty, origin) {
+  return rickandmorty.filter (character => character.origin.name === origin);
+}
 
 }
   

@@ -16,7 +16,7 @@ const showNav = () => {
         //push añade los elementos que encuentra al final del array vacio que creamos al inicio.
       });
       species = species.filter(uniqueValue);
-
+      
 
       let origin = [];
       rickandmorty.forEach((e) => {
@@ -46,45 +46,42 @@ const showNav = () => {
       
       //template para la barra con filtros.
     
-      let nav = `<select name="" id="filterSpecies" class="selectFilter">
-          <option value="species" selected>Species</option>
-          `;
+      let nav = `<select id="filterSpecies" class="selectFilter">
+      <option value="Species" selected hidden>Species</option>`;
     
       species.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
-        //console.log(e);
       });
     
       nav += `</select>
-        <select name="" id="filterOrigin" class="selectFilter">
-        <option value="Origin" selected>Origin</option>
-        `;
+        <select id="filterOrigin" class="selectFilter">
+        <option value="origin" selected hidden>Origin</option>`;
     
       origin.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
       nav += `</select>
-        <select name="" id="filterStatus" class="selectFilter">
-        <option value="status" selected>Status</option>`;
+        <select id="filterStatus" class="selectFilter">
+        <option value="status" selected hidden> Status </option>`;
     
       status.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
       nav += `</select>
-        <select name="filterGender" id="filterGender" class="selectFilter">
-        <option value="Genero" selected>Gender</option>
-        `;
+        <select id="filterGender" class="selectFilter">
+        <option value="Gender" selected hidden> Gender </option>`;
+        
     
       gender.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;
       });
     
       nav += `</select>
-        <select name="" id="filterLocation" class="selectFilter">
-        <option value="Location" selected>Location</option>
-        `;
+        <select id="filterLocation" class="selectFilter">
+        <option value="Location" selected hidden> Location </option>`;
+
     
       location.forEach((e) => {
         nav += `<option value="${e}">${e}</option>`;

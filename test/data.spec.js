@@ -29,7 +29,7 @@ describe('filters', () => {
     });
 
     
-    it('return testArray width orderAZ', () => {
+    it('return testArray with orderAZ', () => {
       expect(filters.orderAZ(testArray)).toEqual([{id: 3, name: "Beth Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
       {id:4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: {
         "name": "Citadel of Ricks",
@@ -44,7 +44,7 @@ describe('filters', () => {
         expect(typeof filters.orderZA).toBe('function');
       });
 
-    it('return newArray width orderZA', () => {
+    it('return newArray with orderZA', () => {
       expect(filters.orderZA(newArray)).toEqual([{id: 2, name: "Zick Zack", status: "Alive", species: "Human", gender: "Male", origin: "Earth", location: "Earth"},
       {id: 1, name: "Summer Smith", status: "Alive", species: "Human", gender: "Female", origin: "Earth", location: "Earth"},
        {id: 4, name: "Evil Rick",status: "Dead", species: "Humanoide", gender: "Male", origin: {"name": "unknown","url": ""}, location: { "name": "Citadel of Ricks", "url": "" }},
