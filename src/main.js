@@ -106,6 +106,29 @@ selectGender.addEventListener('change', (e) => {
     makeCard(onlyGender);
 });
 
+const selectSpecies= document.querySelector('#filterSpecies');
+selectSpecies.addEventListener('change', (e) => {
+    let onlySpecies = filters.speciesFunction(rickandmorty, e.target.value);
+    newArray = onlySpecies;
+    makeCard(onlySpecies);
+});
+
+const selectStatus= document.querySelector('#filterStatus');
+selectStatus.addEventListener('change', (e) => { 
+    let onlyStatus = filters.statusFunction(rickandmorty, e.target.value);
+    newArray = onlyStatus;
+    makeCard(onlyStatus);
+});
+
+const selectLocation= document.querySelector('#filterLocation');
+selectLocation.addEventListener('change', (e) => {
+    let onlyLocation = filters.locationFunction(rickandmorty, e.target.value);
+    newArray = onlyLocation;
+    makeCard(onlyLocation);
+    
+});
+
+
 
 
 //--------función para botón pegajoso, para que aparezca desde los 600px----- //

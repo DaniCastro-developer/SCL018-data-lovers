@@ -40,9 +40,17 @@ genderFunction: function (rickandmorty, gender){
   return rickandmorty.filter(character => character.gender === gender);
 },
 
+speciesFunction: function (rickandmorty, species){
+  return rickandmorty.filter(character => character.species === species);
+},
 
+statusFunction: function (rickandmorty, status){
+  return rickandmorty.filter(character => character.status === status);
+},
 
-
+locationFunction: function (rickandmorty, location){
+  return rickandmorty.filter(character =>  character.location.name === location);
+},
 
 }
   
