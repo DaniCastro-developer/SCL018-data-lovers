@@ -37,11 +37,7 @@ searchFunction: function (rickandmorty, searchValue){
 },
 
 genderFunction: function (rickandmorty, gender){
-  let onlyGender = rickandmorty.filter((character) => {
-  return character.gender === gender;
-  });
-  //console.log(onlyGender);
-  return onlyGender;
+  return rickandmorty.filter(character => character.gender === gender);
 },
 
 

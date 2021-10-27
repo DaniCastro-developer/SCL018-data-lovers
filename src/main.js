@@ -101,12 +101,10 @@ let selectZA = document.getElementById('buttonZA');
 // llamado a otros filtros de data.js
 const selectGender= document.querySelector('#filterGender');
 selectGender.addEventListener('change', (e) => {
-    const genderSelect = e.target.options;
-    const gender = genderSelect[genderSelect.selectedIndex].text;
-    let onlyGender = filters.genderFunction(rickandmorty, gender);
+    let onlyGender = filters.genderFunction(rickandmorty, e.target.value);
+    newArray = onlyGender;
     makeCard(onlyGender);
 });
-
 
 
 
