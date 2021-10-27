@@ -33,33 +33,35 @@
   <div id="page2" hidden>
     <header id="up">
       
-      <div> <img src="Recursos/letrasRickandMorty.png"  class="imageReturn" id="imageReturn"> </div>
+      <nav> <img src="Recursos/letrasRickandMorty.png"  class="imageReturn" id="imageReturn"> </nav>
 
-      <div class="searchBar-style">
+      <nav class="searchBar-style">
         <button class="buttonAZ" value="orderAtoZ" id="buttonAZ"> <img src="Recursos/from-a-to-z.png" class="imageAZ"> </button>
         <button class="buttonAZ" value="orderZtoA" id="buttonZA"> <img src="Recursos/from-z-to-a.png" class="imageAZ"> </button>
         <input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="Find your character"/>
-      </div>
+      </nav>
   
     </header> 
 
+  
+    <section>
 <!-- nav con filtros se rellena de manera dinámica en navdin.js -->
-    <nav class="filtersContainer" id="filtersContainer"> </nav>
-
-    <main>
+    <figure class="filtersContainer" id="filtersContainer"> </figure>
+   
+    
  
       <!-- Gif para explicar uso de tarjetas -->
    <img src="Recursos\clickGif.gif" id="click">
         
       <!--div vacio para llenarlo con la data-->
-        <div id="showCards" class= "showCards"> </div>
+        <main id="showCards" class= "showCards"> </main>
        
-   </main>
+  
 
    <!--imagen y sonido botón pegajoso-->
    <a href="#up"><img src="Recursos/gifUp.gif" id="goToUp"><audio id="dubdub" src="Recursos/dub.mp3"></audio></a>
 
-  </div>
+  </section>
     <script src="main.js" type="module" ></script>
   </body>
 </html>

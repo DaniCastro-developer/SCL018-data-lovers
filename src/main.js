@@ -25,6 +25,7 @@ document.getElementById('imageReturn').addEventListener('click',()=>{
 
 // variable con toda la data 
 let rickandmorty = data.results;
+let newArray = rickandmorty;
 
 // div donde se muestras las tarjetas 
 const div = document.getElementById('showCards');
@@ -100,68 +101,12 @@ let selectZA = document.getElementById('buttonZA');
 // llamado a otros filtros de data.js
 const selectGender= document.querySelector('#filterGender');
 selectGender.addEventListener('change', (e) => {
-  if  (selectGender.value === 'Genero') {
-    makeCard(rickandmorty);
-} else {
     const genderSelect = e.target.options;
     const gender = genderSelect[genderSelect.selectedIndex].text;
     let onlyGender = filters.genderFunction(rickandmorty, gender);
     makeCard(onlyGender);
-}
 });
 
-const selectSpecies= document.querySelector('#filterSpecies');
-selectSpecies.addEventListener('change', (e) => {
-  if(selectSpecies.value === 'species'){
-    makeCard(rickandmorty);
-  } else {
-  const genderSelect = e.target.options;
-  const valueSpecie = genderSelect[genderSelect.selectedIndex].text;
-    let species = valueSpecie;
-    let onlySpecies = filters.speciesFunction(rickandmorty, species);
-    makeCard(onlySpecies);
-  }
-});
-
-const selectStatus= document.querySelector('#filterStatus');
-selectStatus.addEventListener('change', (e) => { 
-  if (selectStatus.value === 'status') {
-    makeCard(rickandmorty);
-  } else {
-  const statusSelect = e.target.options;
-  const valueStatus = statusSelect[statusSelect.selectedIndex].text;
-    let status = valueStatus;
-    let onlyStatus = filters.statusFunction(rickandmorty, status);
-    makeCard(onlyStatus);
-  }
-});
-
-const selectLocation= document.querySelector('#filterLocation');
-selectLocation.addEventListener('change', (e) => {
-  if (selectLocation.value === 'Location') {
-    makeCard(rickandmorty);
-  }
-  else {
-  const locationSelect = e.target.options;
-  const valueLocation = locationSelect[locationSelect.selectedIndex].text;
-    let location = valueLocation;
-    let onlyLocation = filters.locationFunction(rickandmorty, location);
-    makeCard(onlyLocation);
-    }
-});
-
-const selectOrigin= document.querySelector('#filterOrigin');
-selectOrigin.addEventListener('change', (e) => {
-  if (selectOrigin.value === 'Origin') {
-    makeCard(rickandmorty);
-  } else {
-  const originSelect = e.target.options;
-  const valueOrigin = originSelect[originSelect.selectedIndex].text;
-    let origin = valueOrigin;
-    let onlyOrigin = filters.originFunction(rickandmorty, origin);
-    makeCard(onlyOrigin);
-  }
-});
 
 
 

@@ -46,36 +46,6 @@ genderFunction: function (rickandmorty, gender){
 
 
 
-speciesFunction: function (rickandmorty, species){
-  let onlySpecies = rickandmorty.filter((character) => {
-  return character.species === species;
-  });
-  return onlySpecies;
-},
-
-statusFunction: function (rickandmorty, status){
-  let onlyStatus = rickandmorty.filter((character) => {
-  return character.status === status;
-  });
-  return onlyStatus;
-},
-
-
-locationFunction: function(rickandmorty, location){
-  let onlyLocation = rickandmorty.filter((character) => {
-  return character.location.name === location;
-  });
-  return onlyLocation;
-  
-},
-
-originFunction: function(rickandmorty, origin){
-  let onlyOrigin = rickandmorty.filter((character) => {
-  return character.origin.name === origin;
-  });
-  return onlyOrigin;
-  
-},
 
 
 }
