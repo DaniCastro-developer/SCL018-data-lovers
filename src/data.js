@@ -28,7 +28,7 @@ const filters = {
     });
     return orderCharacters;
     },
-    
+
 
 
 searchFunction: function (rickandmorty, searchValue){

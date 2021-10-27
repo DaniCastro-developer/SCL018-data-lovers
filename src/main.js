@@ -87,14 +87,14 @@ let selectZA = document.getElementById('buttonZA');
 
   selectAZ.addEventListener('click', () => {
       let characters = filters.orderAZ(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty); 
+      newArray = characters;
+      makeCard(characters); 
     });
 
   selectZA.addEventListener('click', () => {
       let characters = filters.orderZA(rickandmorty);
-      rickandmorty = characters;
-      makeCard(rickandmorty); 
+      newArray = characters;
+      makeCard(characters); 
     });
 
 
